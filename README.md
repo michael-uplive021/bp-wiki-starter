@@ -33,18 +33,33 @@ BP-Wiki Starter 为 Obsidian 用户提供中英双语知识库启动结构，适
 | Edition | For | Includes | Payment |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| Pro Runtime | Business analysts, researchers, BP and decision-support workers | Dual-engine Runtime, project workbench, dashboard queues, inbox governance, business templates, content-pack updates | Optional paid subscription |
-| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service |
+| Pro Runtime Individual | Individual business analysts, researchers, BP and decision-support workers | Dual-engine Runtime content pack, project workbench, dashboard queues, inbox governance, business templates, content-pack updates | Planned optional subscription: $9/month or $79/year |
+| Pro Runtime Professional | Consultants, heavy research users, and advanced operators | Individual Pro plus advanced workflows, operating-review templates, and priority content-pack updates | Planned optional subscription: $19/month or $179/year |
+| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service from $1,500 or RMB 9,800 |
+
+See [PRICING.md](PRICING.md) for the planned Pro and Custom pricing model.
+
+## Early Access Payment
+
+For early BP-Wiki Pro access or Custom Implementation inquiries, use this PayPal.Me link:
+
+[paypal.me/michael061394](https://paypal.me/michael061394)
+
+![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
+
+The QR code encodes the PayPal.Me URL above and does not display personal name information. This is a manual early-access payment and inquiry channel. Version `1.0.1` does not include automated subscription checkout, account login, license validation, or subscribed content-pack downloads.
 
 ## Optional Payments Disclosure
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin. The current `1.0.0` plugin does not require payment, does not require an account, does not use network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through PayPal or a future checkout provider. The current `1.0.1` plugin does not require payment, does not require an account, does not make network requests, does not include telemetry, and does not update itself.
+
+BP-Wiki Pro pricing is planned and disclosed for product transparency. Pro subscription purchase and license activation are not yet active in this plugin release.
 
 If future versions add license validation, account login, or content-pack downloads, those features will be clearly disclosed in this README and in the plugin settings before release.
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.0.0` does not collect analytics, send telemetry, or connect to external services.
+This plugin runs locally inside your vault. Version `1.0.1` does not collect analytics, send telemetry, or connect to external services.
 
 ## Commands
 

@@ -28,13 +28,34 @@ Recommended label: `Optional payments`
 
 Reason: the Free Starter plugin works without payment, while BP-Wiki Pro and Custom services may be offered as optional paid upgrades outside the plugin.
 
+Planned pricing:
+
+| Edition | Price |
+| --- | ---: |
+| Free Starter | Free |
+| Pro Runtime Individual | $9/month or $79/year |
+| Pro Runtime Professional | $19/month or $179/year |
+| Custom Implementation | From $1,500 or RMB 9,800 |
+
+Version `1.0.1` does not activate payments, accounts, license validation, or network downloads. Pricing is disclosed for product transparency.
+
+## Payment Link
+
+Manual early-access payment and inquiry channel:
+
+```text
+https://paypal.me/michael061394
+```
+
+This is also listed as the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.1`.
+
 ## Required Release
 
 Create a GitHub release with:
 
 ```text
-Tag: 1.0.0
-Release name: 1.0.0
+Tag: 1.0.1
+Release name: 1.0.1
 ```
 
 Attach:
@@ -45,7 +66,7 @@ Attach:
 
 ## Disclosure Text
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin. Version `1.0.0` does not require payment, does not require an account, does not use network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through PayPal or a future checkout provider. Version `1.0.1` does not require payment, does not require an account, does not make network requests, does not include telemetry, and does not update itself.
 
 ## Dashboard Submission Steps
 

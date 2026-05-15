@@ -245,8 +245,10 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Editions" });
     editions.createEl("p", { text: "Free Starter: 12 bilingual templates and setup guides." });
-    editions.createEl("p", { text: "Pro Runtime: Dual-engine Runtime, project workbench, dashboard queues, inbox governance, and business templates." });
-    editions.createEl("p", { text: "Custom Implementation: Private diagnosis, migration, tailoring, training, and support." });
+    editions.createEl("p", { text: "Pro Individual: Planned subscription at $9/month or $79/year for the dual-engine Runtime content pack." });
+    editions.createEl("p", { text: "Pro Professional: Planned subscription at $19/month or $179/year for advanced workflows and priority content-pack updates." });
+    editions.createEl("p", { text: "Custom Implementation: Project-based service from $1,500 or RMB 9,800 for migration, tailoring, training, and support." });
+    editions.createEl("p", { text: "Early access and custom inquiries: paypal.me/michael061394." });
   }
 }
 
@@ -278,8 +280,9 @@ function editionComparisonContent() {
 | Edition | For | Includes | Payment |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| Pro Runtime | Business analysts, researchers, BP and decision-support workers | Dual-engine Runtime, project workbench, dashboard queues, inbox governance, business templates, content-pack updates | Optional paid subscription |
-| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service |
+| Pro Runtime Individual | Individual business analysts, researchers, BP and decision-support workers | Dual-engine Runtime content pack, project workbench, dashboard queues, inbox governance, business templates, content-pack updates | Planned optional subscription: $9/month or $79/year |
+| Pro Runtime Professional | Consultants, heavy research users, and advanced operators | Individual Pro plus advanced workflows, operating-review templates, and priority content-pack updates | Planned optional subscription: $19/month or $179/year |
+| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service from $1,500 or RMB 9,800 |
 
 ## Free Starter
 
@@ -293,11 +296,45 @@ Pro Runtime turns a starter vault into a working business analysis system.
 
 Pro 版把基础知识库升级为可运行的商业分析工作台。
 
+Planned price:
+
+- Individual: $9/month or $79/year.
+- Professional: $19/month or $179/year.
+
+计划定价：
+
+- 个人版：9 美元/月或 79 美元/年。
+- 专业版：19 美元/月或 179 美元/年。
+
 ## Custom Implementation
 
 Custom Implementation is for teams or advanced users who need migration, tailoring, and training.
 
 私人订制适合需要迁移、裁剪和培训的团队或重度用户。
+
+Planned starting price: from $1,500 or RMB 9,800.
+
+计划起步价：1,500 美元起或人民币 9,800 元起。
+
+## Payment Status
+
+Version 1.0.1 does not activate payments, accounts, license validation, or network downloads. Pricing is disclosed so users can understand the product roadmap before choosing a workflow.
+
+1.0.1 版本不启用付款、账号、授权验证或网络下载。这里先披露价格，是为了让用户在选择工作流前理解产品路线。
+
+## Early Access Payment
+
+Early BP-Wiki Pro access and Custom Implementation inquiries can use:
+
+[paypal.me/michael061394](https://paypal.me/michael061394)
+
+This is a manual external PayPal.Me channel, not an automated in-plugin subscription or license system.
+
+早期 Pro 访问和私人订制咨询可使用：
+
+[paypal.me/michael061394](https://paypal.me/michael061394)
+
+这是外部 PayPal.Me 手动付款 / 咨询入口，不是插件内自动订阅或授权系统。
 `;
 }
 
