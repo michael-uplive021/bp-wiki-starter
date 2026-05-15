@@ -33,29 +33,35 @@ Planned pricing:
 | Edition | Price |
 | --- | ---: |
 | Free Starter | Free |
-| Pro Runtime Individual | $9/month or $79/year |
-| Pro Runtime Professional | $19/month or $179/year |
+| V2 Early Access Pack | RMB 99 |
+| V2 Early Access + Updates | RMB 199 |
 | Custom Implementation | From $1,500 or RMB 9,800 |
 
-Version `1.0.1` does not activate payments, accounts, license validation, or network downloads. Pricing is disclosed for product transparency.
+Version `1.0.2` does not activate in-plugin payments, accounts, license validation, or automatic network downloads. Pricing is disclosed for product transparency.
 
-## Payment Link
+## Payment Links
 
-Manual early-access payment and inquiry channel:
+RMB early-access payment:
+
+```text
+https://ifdian.net/a/michael021
+```
+
+International payment and inquiry channel:
 
 ```text
 https://paypal.me/michael061394
 ```
 
-This is also listed as the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.1`.
+Both links are listed in the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.2`.
 
 ## Required Release
 
 Create a GitHub release with:
 
 ```text
-Tag: 1.0.1
-Release name: 1.0.1
+Tag: 1.0.2
+Release name: 1.0.2
 ```
 
 Attach:
@@ -66,7 +72,7 @@ Attach:
 
 ## Disclosure Text
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through PayPal or a future checkout provider. Version `1.0.1` does not require payment, does not require an account, does not make network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. Version `1.0.2` does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself. Payment buttons open external payment pages only when clicked.
 
 ## Dashboard Submission Steps
 

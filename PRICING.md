@@ -2,34 +2,46 @@
 
 BP-Wiki Starter is free to use.
 
-BP-Wiki Pro and Custom Implementation are planned optional paid offerings. They are not required to use the free plugin.
+BP-Wiki Pro and Custom Implementation are optional paid offerings. They are not required to use the free plugin.
 
-## Planned Editions
+## Editions
 
 | Edition | Price | Best For | Includes |
 | --- | ---: | --- | --- |
 | Free Starter | Free | New Obsidian users and knowledge-base builders | 12 bilingual starter templates, setup guide, template selector, edition comparison |
-| Pro Runtime Individual | $9/month or $79/year | Individual BP, business analysts, researchers, and knowledge workers | Dual-engine Runtime content pack, project workbench, dashboard queues, inbox governance, business templates, content-pack updates |
-| Pro Runtime Professional | $19/month or $179/year | Consultants, advanced researchers, and high-frequency decision-support users | Individual Pro plus advanced workflows, operating-review templates, and priority content-pack updates |
+| V2 Early Access Pack | RMB 99 | Individual BP, business analysts, researchers, and knowledge workers | Current Pro Runtime Pack download and installation guide |
+| V2 Early Access + Updates | RMB 199 | Users who want the current pack plus short-cycle improvements | Current Pro Runtime Pack plus 3 months of minor content-pack updates |
 | Custom Implementation | From $1,500 or RMB 9,800 | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training, and support |
 
-## Planned Subscription Model
+## V2 Delivery Model
 
-Pro Runtime will be sold as a subscription content pack rather than as a paid plugin binary.
+Pro Runtime is delivered as a paid content pack rather than as a paid plugin binary.
 
-The free plugin remains usable without payment. Future paid versions may use account login, license validation, or subscribed content-pack downloads. If that happens, the README, privacy policy, and plugin settings will disclose the payment, account, and network requirements before release.
+The free plugin remains usable without payment. Version `1.0.2` does not include in-plugin checkout, account login, license validation, or automatic subscribed downloads.
+
+Delivery flow:
+
+1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
+2. Open the V2 Early Access page from the plugin.
+3. Pay through Afdian for RMB users or PayPal for international users.
+4. Download `BP-Wiki Pro Runtime Pack.zip` from the paid delivery post or message.
+5. Follow the included installation guide.
 
 ## Early Access Payment Link
 
-During the initial review period, early BP-Wiki Pro access and Custom Implementation inquiries can use this manual PayPal.Me channel:
+RMB users can use Afdian:
+
+[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+
+International users and custom inquiries can use this manual PayPal.Me channel:
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
 ![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
 
-The QR code encodes the PayPal.Me URL above and does not display personal name information. This PayPal link is an external manual payment and inquiry channel. It is not an automated subscription system, license server, or in-plugin checkout flow in version `1.0.1`.
+The QR code encodes the PayPal.Me URL above and does not display personal name information. These payment links are external manual payment and inquiry channels. They are not automated subscription systems, license servers, or in-plugin checkout flows in version `1.0.2`.
 
-## Why Content Pack Subscription?
+## Why Content Pack Delivery?
 
 - The official plugin can remain installable from Obsidian Community.
 - The open plugin shell can stay simple and auditable.
@@ -38,6 +50,6 @@ The QR code encodes the PayPal.Me URL above and does not display personal name i
 
 ## Current Availability
 
-Pro subscription purchase and license activation are not active in version `1.0.1`.
+In-plugin purchase, automatic renewal, and license activation are not active in version `1.0.2`.
 
-For Pro or Custom inquiries during the initial review period, use the PayPal.Me link above or GitHub issues on this repository.
+For Pro or Custom inquiries, use Afdian, PayPal, or GitHub issues on this repository.

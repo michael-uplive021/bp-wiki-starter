@@ -1,6 +1,8 @@
 const { Notice, Plugin, PluginSettingTab, Setting, normalizePath } = require("obsidian");
 
 const STARTER_ROOT = "BP-Wiki Starter";
+const AFDIAN_URL = "https://ifdian.net/a/michael021";
+const PAYPAL_URL = "https://paypal.me/michael061394";
 
 const TEMPLATES = [
   {
@@ -139,6 +141,24 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
       callback: () => this.openOrCreateFile(`${STARTER_ROOT}/Template Selector.md`, templateSelectorContent())
     });
 
+    this.addCommand({
+      id: "open-v2-early-access",
+      name: "Open V2 early access",
+      callback: () => this.openOrCreateFile(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent())
+    });
+
+    this.addCommand({
+      id: "open-rmb-payment-page",
+      name: "Open RMB payment page",
+      callback: () => this.openPaymentLink(AFDIAN_URL, "Opening RMB early access payment page.")
+    });
+
+    this.addCommand({
+      id: "open-paypal-payment-page",
+      name: "Open PayPal payment page",
+      callback: () => this.openPaymentLink(PAYPAL_URL, "Opening PayPal payment page.")
+    });
+
     this.addSettingTab(new BPWikiStarterSettingTab(this.app, this));
   }
 
@@ -146,11 +166,17 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
     await this.saveData(this.settings);
   }
 
+  openPaymentLink(url, message) {
+    window.open(url, "_blank");
+    new Notice(message);
+  }
+
   async installStarterKit() {
     await this.ensureFolder(STARTER_ROOT);
     await this.createFileIfMissing(`${STARTER_ROOT}/README.md`, starterReadmeContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Template Selector.md`, templateSelectorContent());
+    await this.createFileIfMissing(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent());
 
     for (const template of TEMPLATES) {
       const templateRoot = `${STARTER_ROOT}/${template.id}`;
@@ -242,13 +268,41 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
           .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent()));
       });
 
+    new Setting(containerEl)
+      .setName("Open V2 early access")
+      .setDesc("View the RMB early access pack, optional updates, payment links, and installation steps.")
+      .addButton((button) => {
+        button
+          .setButtonText("Open")
+          .setCta()
+          .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent()));
+      });
+
+    new Setting(containerEl)
+      .setName("RMB payment")
+      .setDesc("Open the Afdian page for RMB payment via Alipay or WeChat Pay.")
+      .addButton((button) => {
+        button
+          .setButtonText("Afdian")
+          .onClick(() => this.plugin.openPaymentLink(AFDIAN_URL, "Opening RMB payment page."));
+      });
+
+    new Setting(containerEl)
+      .setName("International payment")
+      .setDesc("Open the PayPal.Me page for international payment.")
+      .addButton((button) => {
+        button
+          .setButtonText("PayPal")
+          .onClick(() => this.plugin.openPaymentLink(PAYPAL_URL, "Opening PayPal payment page."));
+      });
+
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Editions" });
     editions.createEl("p", { text: "Free Starter: 12 bilingual templates and setup guides." });
-    editions.createEl("p", { text: "Pro Individual: Planned subscription at $9/month or $79/year for the dual-engine Runtime content pack." });
-    editions.createEl("p", { text: "Pro Professional: Planned subscription at $19/month or $179/year for advanced workflows and priority content-pack updates." });
+    editions.createEl("p", { text: "V2 Early Access Pack: RMB 99 one-time download for the current Pro Runtime pack." });
+    editions.createEl("p", { text: "V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates." });
     editions.createEl("p", { text: "Custom Implementation: Project-based service from $1,500 or RMB 9,800 for migration, tailoring, training, and support." });
-    editions.createEl("p", { text: "Early access and custom inquiries: paypal.me/michael061394." });
+    editions.createEl("p", { text: "RMB payment: ifdian.net/a/michael021. International payment: paypal.me/michael061394." });
   }
 }
 
@@ -264,7 +318,7 @@ BP-Wiki Starter 帮你在投入复杂系统前，先选择并安装一套适合�
 1. Open [[Template Selector]].
 2. Choose one structure based on your current friction.
 3. Use the generated folder as a starter, then delete what you do not need.
-4. Read [[BP-Wiki Editions]] if you need the Pro Runtime or a custom implementation.
+4. Read [[V2 Early Access]] if you need the Pro Runtime pack or a custom implementation.
 
 ## Core Idea
 
@@ -280,8 +334,8 @@ function editionComparisonContent() {
 | Edition | For | Includes | Payment |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| Pro Runtime Individual | Individual business analysts, researchers, BP and decision-support workers | Dual-engine Runtime content pack, project workbench, dashboard queues, inbox governance, business templates, content-pack updates | Planned optional subscription: $9/month or $79/year |
-| Pro Runtime Professional | Consultants, heavy research users, and advanced operators | Individual Pro plus advanced workflows, operating-review templates, and priority content-pack updates | Planned optional subscription: $19/month or $179/year |
+| V2 Early Access Pack | Individual business analysts, researchers, BP and decision-support workers | Current Pro Runtime Pack, installation guide, dashboard/workbench setup, business templates | RMB 99 one-time download |
+| V2 Early Access + Updates | Users who want the current pack plus short-cycle improvements | Current Pro Runtime Pack plus 3 months of minor content-pack updates | RMB 199 |
 | Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service from $1,500 or RMB 9,800 |
 
 ## Free Starter
@@ -290,21 +344,21 @@ Free Starter gives you a clean structure and a practical starting point.
 
 免费版提供干净的结构和可直接使用的起点。
 
-## Pro Runtime
+## V2 Pro Runtime
 
 Pro Runtime turns a starter vault into a working business analysis system.
 
 Pro 版把基础知识库升级为可运行的商业分析工作台。
 
-Planned price:
+RMB early access:
 
-- Individual: $9/month or $79/year.
-- Professional: $19/month or $179/year.
+- V2 Early Access Pack: RMB 99 one-time download.
+- V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates.
 
-计划定价：
+人民币早鸟价：
 
-- 个人版：9 美元/月或 79 美元/年。
-- 专业版：19 美元/月或 179 美元/年。
+- V2 早鸟下载包：99 元，一次支持后获取当前版本。
+- V2 早鸟更新包：199 元，当前版本 + 3 个月小版本更新。
 
 ## Custom Implementation
 
@@ -318,23 +372,99 @@ Planned starting price: from $1,500 or RMB 9,800.
 
 ## Payment Status
 
-Version 1.0.1 does not activate payments, accounts, license validation, or network downloads. Pricing is disclosed so users can understand the product roadmap before choosing a workflow.
+Version 1.0.2 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses Afdian, and international payment uses PayPal.
 
-1.0.1 版本不启用付款、账号、授权验证或网络下载。这里先披露价格，是为了让用户在选择工作流前理解产品路线。
+1.0.2 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电，国际付款使用 PayPal。
 
 ## Early Access Payment
 
 Early BP-Wiki Pro access and Custom Implementation inquiries can use:
 
+[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
-This is a manual external PayPal.Me channel, not an automated in-plugin subscription or license system.
+These are external manual payment channels, not automated in-plugin subscription or license systems.
 
 早期 Pro 访问和私人订制咨询可使用：
 
+[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
-这是外部 PayPal.Me 手动付款 / 咨询入口，不是插件内自动订阅或授权系统。
+这是外部手动付款 / 咨询入口，不是插件内自动订阅或授权系统。
+`;
+}
+
+function v2EarlyAccessContent() {
+  return `# BP-Wiki V2 Early Access
+
+V2 is delivered as a Pro Runtime Pack, not as a separate paid plugin binary.
+
+V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文件交付。
+
+## What You Get
+
+- Current BP-Wiki Pro Runtime Pack.
+- Dual-engine workflow map.
+- Project Workbench setup guide.
+- Dashboard queue setup guide.
+- Inbox governance checklist.
+- Business analysis templates.
+- V2 installation and update instructions.
+
+## 你会获得什么
+
+- 当前版本的 BP-Wiki Pro Runtime 内容包。
+- 双引擎工作流地图。
+- 项目 Workbench 搭建说明。
+- Dashboard 队列搭建说明。
+- Inbox 治理检查表。
+- 商业分析模板。
+- V2 安装与更新说明。
+
+## RMB Early Access
+
+| Option | Price | Includes |
+| --- | ---: | --- |
+| V2 Early Access Pack | RMB 99 | Current Pro Runtime Pack download |
+| V2 Early Access + Updates | RMB 199 | Current pack plus 3 months of minor updates |
+| Custom Implementation | From RMB 9,800 | Private diagnosis, migration, tailoring, training, and support |
+
+## 人民币早鸟方案
+
+| 方案 | 价格 | 包含内容 |
+| --- | ---: | --- |
+| V2 早鸟下载包 | 99 元 | 当前版本 Pro Runtime Pack 下载 |
+| V2 早鸟更新包 | 199 元 | 当前版本 + 3 个月小版本更新 |
+| 私人订制 | 9,800 元起 | 诊断、迁移、裁剪、培训和支持 |
+
+## Payment Links
+
+- RMB / 人民币: [Afdian](https://ifdian.net/a/michael021)
+- International / 国际: [PayPal](https://paypal.me/michael061394)
+
+## Installation Flow
+
+1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
+2. Open the RMB or PayPal payment link above.
+3. After payment, download \`BP-Wiki Pro Runtime Pack.zip\` from the paid delivery post or message.
+4. Unzip the pack into your vault or follow the included install guide.
+5. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
+
+## 安装流程
+
+1. 从 Obsidian 插件市场安装 BP-Wiki Starter。
+2. 打开上方人民币或 PayPal 付款入口。
+3. 付款后，从付费可见内容或消息中下载 \`BP-Wiki Pro Runtime Pack.zip\`。
+4. 将内容包解压到你的 vault，或按包内安装说明操作。
+5. 保留本插件，用于模板、版本差异和升级说明。
+
+## Boundary
+
+The free plugin does not include the paid Pro Runtime Pack files. The paid pack is delivered after payment through the external payment channel.
+
+免费插件不包含付费 Pro Runtime 内容包文件。付费内容包会在付款后通过外部付款渠道交付。
 `;
 }
 
