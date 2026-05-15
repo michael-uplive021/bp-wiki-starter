@@ -1,0 +1,19 @@
+.bp-wiki-starter-setting {
+  display: grid;
+  gap: 12px;
+}
+
+.bp-wiki-starter-editions {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--background-secondary);
+}
+
+.bp-wiki-starter-editions h3 {
+  margin: 0 0 8px;
+}
+
+.bp-wiki-starter-editions p {
+  margin: 6px 0;
+}
