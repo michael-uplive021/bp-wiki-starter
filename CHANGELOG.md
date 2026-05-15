@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3
+
+- Changed the RMB payment link from the Afdian creator profile to the direct V2 Early Access item page.
+- Clarified that current V2 delivery uses Afdian order-message delivery until creator verification unlocks automatic reply / activation-code delivery.
+- Updated generated V2 installation guidance to point buyers to `BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip` and `00_START_HERE.md`.
+
 ## 1.0.2
 
 - Repositioned V2 from a planned subscription to an RMB-first early access download pack with optional updates.

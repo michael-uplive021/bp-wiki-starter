@@ -37,14 +37,14 @@ Planned pricing:
 | V2 Early Access + Updates | RMB 199 |
 | Custom Implementation | From $1,500 or RMB 9,800 |
 
-Version `1.0.2` does not activate in-plugin payments, accounts, license validation, or automatic network downloads. Pricing is disclosed for product transparency.
+Version `1.0.3` does not activate in-plugin payments, accounts, license validation, or automatic network downloads. Pricing is disclosed for product transparency.
 
 ## Payment Links
 
 RMB early-access payment:
 
 ```text
-https://ifdian.net/a/michael021
+https://ifdian.net/item/e2f39c10505211f1a93452540025c377
 ```
 
 International payment and inquiry channel:
@@ -53,15 +53,15 @@ International payment and inquiry channel:
 https://paypal.me/michael061394
 ```
 
-Both links are listed in the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.2`.
+Both links are listed in the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.3`.
 
 ## Required Release
 
 Create a GitHub release with:
 
 ```text
-Tag: 1.0.2
-Release name: 1.0.2
+Tag: 1.0.3
+Release name: 1.0.3
 ```
 
 Attach:
@@ -72,7 +72,7 @@ Attach:
 
 ## Disclosure Text
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. Version `1.0.2` does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself. Payment buttons open external payment pages only when clicked.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. Version `1.0.3` does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself. Payment buttons open external payment pages only when clicked.
 
 ## Dashboard Submission Steps
 

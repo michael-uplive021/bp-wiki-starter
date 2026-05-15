@@ -42,9 +42,9 @@ See [PRICING.md](PRICING.md) for the planned Pro and Custom pricing model.
 
 ## Early Access Payment
 
-For RMB users, use Afdian:
+For RMB users, use the Afdian V2 item page:
 
-[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
 
 For international users or custom inquiries, use PayPal:
 
@@ -52,19 +52,19 @@ For international users or custom inquiries, use PayPal:
 
 ![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
 
-The QR code encodes the PayPal.Me URL above and does not display personal name information. These are manual early-access payment and inquiry channels. Version `1.0.2` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
+The QR code encodes the PayPal.Me URL above and does not display personal name information. These are manual early-access payment and inquiry channels. Version `1.0.3` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
 
 ## Optional Payments Disclosure
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. The current `1.0.2` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. The current `1.0.3` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
 
-BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Automated subscription purchase and license activation are not active in this plugin release.
+BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Current delivery uses order-message delivery; automated subscription purchase, automatic pack download, and license activation are not active in this plugin release.
 
 If future versions add license validation, account login, or automatic content-pack downloads, those features will be clearly disclosed in this README and in the plugin settings before release.
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.0.2` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
+This plugin runs locally inside your vault. Version `1.0.3` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
 
 ## Commands
 

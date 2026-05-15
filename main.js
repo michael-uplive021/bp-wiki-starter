@@ -1,7 +1,7 @@
 const { Notice, Plugin, PluginSettingTab, Setting, normalizePath } = require("obsidian");
 
 const STARTER_ROOT = "BP-Wiki Starter";
-const AFDIAN_URL = "https://ifdian.net/a/michael021";
+const AFDIAN_URL = "https://ifdian.net/item/e2f39c10505211f1a93452540025c377";
 const PAYPAL_URL = "https://paypal.me/michael061394";
 
 const TEMPLATES = [
@@ -302,7 +302,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
     editions.createEl("p", { text: "V2 Early Access Pack: RMB 99 one-time download for the current Pro Runtime pack." });
     editions.createEl("p", { text: "V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates." });
     editions.createEl("p", { text: "Custom Implementation: Project-based service from $1,500 or RMB 9,800 for migration, tailoring, training, and support." });
-    editions.createEl("p", { text: "RMB payment: ifdian.net/a/michael021. International payment: paypal.me/michael061394." });
+    editions.createEl("p", { text: "RMB payment: ifdian.net/item/e2f39c10505211f1a93452540025c377. International payment: paypal.me/michael061394." });
   }
 }
 
@@ -372,15 +372,15 @@ Planned starting price: from $1,500 or RMB 9,800.
 
 ## Payment Status
 
-Version 1.0.2 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses Afdian, and international payment uses PayPal.
+Version 1.0.3 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Afdian item page, and international payment uses PayPal.
 
-1.0.2 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电，国际付款使用 PayPal。
+1.0.3 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电商品页，国际付款使用 PayPal。
 
 ## Early Access Payment
 
 Early BP-Wiki Pro access and Custom Implementation inquiries can use:
 
-[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -388,7 +388,7 @@ These are external manual payment channels, not automated in-plugin subscription
 
 早期 Pro 访问和私人订制咨询可使用：
 
-[ifdian.net/a/michael021](https://ifdian.net/a/michael021)
+[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -441,24 +441,30 @@ V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文�
 
 ## Payment Links
 
-- RMB / 人民币: [Afdian](https://ifdian.net/a/michael021)
+- RMB / 人民币: [Afdian V2 item](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
 - International / 国际: [PayPal](https://paypal.me/michael061394)
 
 ## Installation Flow
 
 1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
 2. Open the RMB or PayPal payment link above.
-3. After payment, download \`BP-Wiki Pro Runtime Pack.zip\` from the paid delivery post or message.
-4. Unzip the pack into your vault or follow the included install guide.
+3. After payment, receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through the Afdian order message or PayPal follow-up.
+4. Unzip the pack, drag the whole folder into your vault, and open \`00_START_HERE.md\`.
 5. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
 
 ## 安装流程
 
 1. 从 Obsidian 插件市场安装 BP-Wiki Starter。
 2. 打开上方人民币或 PayPal 付款入口。
-3. 付款后，从付费可见内容或消息中下载 \`BP-Wiki Pro Runtime Pack.zip\`。
-4. 将内容包解压到你的 vault，或按包内安装说明操作。
+3. 付款后，通过爱发电订单消息或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
+4. 解压内容包，把整个文件夹拖入你的 vault，然后打开 \`00_START_HERE.md\`。
 5. 保留本插件，用于模板、版本差异和升级说明。
+
+## Delivery Note
+
+Current early access delivery is order-message delivery. Afdian automatic reply / activation-code delivery will be enabled after creator verification unlocks that feature.
+
+当前早鸟交付采用订单消息发包。爱发电创作者认证完成、自动回复 / 激活码能力解锁后，会切换为自动交付。
 
 ## Boundary
 
