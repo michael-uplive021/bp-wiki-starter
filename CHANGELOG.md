@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.4
+
+- Updated V2 delivery wording after Afdian creator verification.
+- Clarified that V2 now uses Afdian automatic reply plus order-message pack delivery.
+- Kept automatic download and license activation out of the plugin release.
+
 ## 1.0.3
 
 - Changed the RMB payment link from the Afdian creator profile to the direct V2 Early Access item page.

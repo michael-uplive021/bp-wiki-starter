@@ -1,7 +1,7 @@
 {
   "id": "bp-wiki-starter",
   "name": "BP-Wiki Starter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minAppVersion": "1.8.0",
   "description": "Create bilingual starter vaults for knowledge work with 12 templates, setup guides, and optional BP-Wiki Pro upgrade paths.",
   "author": "Jie Huang",

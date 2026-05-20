@@ -372,9 +372,9 @@ Planned starting price: from $1,500 or RMB 9,800.
 
 ## Payment Status
 
-Version 1.0.3 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Afdian item page, and international payment uses PayPal.
+Version 1.0.4 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Afdian item page, and international payment uses PayPal.
 
-1.0.3 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电商品页，国际付款使用 PayPal。
+1.0.4 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电商品页，国际付款使用 PayPal。
 
 ## Early Access Payment
 
@@ -448,23 +448,25 @@ V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文�
 
 1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
 2. Open the RMB or PayPal payment link above.
-3. After payment, receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through the Afdian order message or PayPal follow-up.
-4. Unzip the pack, drag the whole folder into your vault, and open \`00_START_HERE.md\`.
-5. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
+3. After payment, Afdian sends an automatic reply with delivery instructions.
+4. Receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through the Afdian order message or PayPal follow-up.
+5. Unzip the pack, drag the whole folder into your vault, and open \`00_START_HERE.md\`.
+6. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
 
 ## 安装流程
 
 1. 从 Obsidian 插件市场安装 BP-Wiki Starter。
 2. 打开上方人民币或 PayPal 付款入口。
-3. 付款后，通过爱发电订单消息或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
-4. 解压内容包，把整个文件夹拖入你的 vault，然后打开 \`00_START_HERE.md\`。
-5. 保留本插件，用于模板、版本差异和升级说明。
+3. 付款后，爱发电会自动回复交付说明。
+4. 通过爱发电订单消息或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
+5. 解压内容包，把整个文件夹拖入你的 vault，然后打开 \`00_START_HERE.md\`。
+6. 保留本插件，用于模板、版本差异和升级说明。
 
 ## Delivery Note
 
-Current early access delivery is order-message delivery. Afdian automatic reply / activation-code delivery will be enabled after creator verification unlocks that feature.
+Current early access delivery uses Afdian automatic reply plus order-message pack delivery. Full automatic download requires a stable download link or Afdian collection content.
 
-当前早鸟交付采用订单消息发包。爱发电创作者认证完成、自动回复 / 激活码能力解锁后，会切换为自动交付。
+当前早鸟交付采用爱发电自动回复 + 订单消息发包。真正自动下载还需要稳定下载链接或爱发电作品集内容承载。
 
 ## Boundary
 
