@@ -1,7 +1,7 @@
 const { Notice, Plugin, PluginSettingTab, Setting, normalizePath } = require("obsidian");
 
 const STARTER_ROOT = "BP-Wiki Starter";
-const AFDIAN_URL = "https://ifdian.net/item/e2f39c10505211f1a93452540025c377";
+const ALIPAY_QR_URL = "https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.jpg";
 const PAYPAL_URL = "https://paypal.me/michael061394";
 
 const TEMPLATES = [
@@ -149,8 +149,8 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
 
     this.addCommand({
       id: "open-rmb-payment-page",
-      name: "Open RMB payment page",
-      callback: () => this.openPaymentLink(AFDIAN_URL, "Opening RMB early access payment page.")
+      name: "Open Alipay QR code",
+      callback: () => this.openPaymentLink(ALIPAY_QR_URL, "Opening Alipay QR code.")
     });
 
     this.addCommand({
@@ -280,11 +280,11 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("RMB payment")
-      .setDesc("Open the Afdian page for RMB payment via Alipay or WeChat Pay.")
+      .setDesc("Open the Alipay QR code for RMB payment.")
       .addButton((button) => {
         button
-          .setButtonText("Afdian")
-          .onClick(() => this.plugin.openPaymentLink(AFDIAN_URL, "Opening RMB payment page."));
+          .setButtonText("Alipay QR")
+          .onClick(() => this.plugin.openPaymentLink(ALIPAY_QR_URL, "Opening Alipay QR code."));
       });
 
     new Setting(containerEl)
@@ -302,7 +302,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
     editions.createEl("p", { text: "V2 Early Access Pack: RMB 99 one-time download for the current Pro Runtime pack." });
     editions.createEl("p", { text: "V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates." });
     editions.createEl("p", { text: "Custom Implementation: Project-based service from $1,500 or RMB 9,800 for migration, tailoring, training, and support." });
-    editions.createEl("p", { text: "RMB payment: ifdian.net/item/e2f39c10505211f1a93452540025c377. International payment: paypal.me/michael061394." });
+    editions.createEl("p", { text: "RMB payment: open the Alipay QR code. International payment: paypal.me/michael061394." });
   }
 }
 
@@ -372,15 +372,17 @@ Planned starting price: from $1,500 or RMB 9,800.
 
 ## Payment Status
 
-Version 1.0.4 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Afdian item page, and international payment uses PayPal.
+Version 1.0.5 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Alipay QR code, and international payment uses PayPal.
 
-1.0.4 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用爱发电商品页，国际付款使用 PayPal。
+1.0.5 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用支付宝二维码，国际付款使用 PayPal。
 
 ## Early Access Payment
 
 Early BP-Wiki Pro access and Custom Implementation inquiries can use:
 
-[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
+Alipay QR code:
+
+![Alipay QR code](https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.jpg)
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -388,7 +390,9 @@ These are external manual payment channels, not automated in-plugin subscription
 
 早期 Pro 访问和私人订制咨询可使用：
 
-[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
+支付宝二维码：
+
+![支付宝二维码](https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.jpg)
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -441,15 +445,15 @@ V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文�
 
 ## Payment Links
 
-- RMB / 人民币: [Afdian V2 item](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
+- RMB / 人民币: [Alipay QR code](https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.jpg)
 - International / 国际: [PayPal](https://paypal.me/michael061394)
 
 ## Installation Flow
 
 1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
 2. Open the RMB or PayPal payment link above.
-3. After payment, Afdian sends an automatic reply with delivery instructions.
-4. Receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through the Afdian order message or PayPal follow-up.
+3. After payment, follow the manual delivery instructions in the payment note or follow-up message.
+4. Receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through manual Alipay or PayPal follow-up.
 5. Unzip the pack, drag the whole folder into your vault, and open \`00_START_HERE.md\`.
 6. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
 
@@ -457,16 +461,16 @@ V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文�
 
 1. 从 Obsidian 插件市场安装 BP-Wiki Starter。
 2. 打开上方人民币或 PayPal 付款入口。
-3. 付款后，爱发电会自动回复交付说明。
-4. 通过爱发电订单消息或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
+3. 付款后，根据付款备注或后续消息完成手动交付确认。
+4. 通过支付宝或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
 5. 解压内容包，把整个文件夹拖入你的 vault，然后打开 \`00_START_HERE.md\`。
 6. 保留本插件，用于模板、版本差异和升级说明。
 
 ## Delivery Note
 
-Current early access delivery uses Afdian automatic reply plus order-message pack delivery. Full automatic download requires a stable download link or Afdian collection content.
+Current early access delivery uses manual payment follow-up. Full automatic download requires a stable download link or a future checkout provider.
 
-当前早鸟交付采用爱发电自动回复 + 订单消息发包。真正自动下载还需要稳定下载链接或爱发电作品集内容承载。
+当前早鸟交付采用手动付款后续确认。真正自动下载还需要稳定下载链接或未来的 checkout provider。
 
 ## Boundary
 

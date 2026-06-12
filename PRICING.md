@@ -17,22 +17,22 @@ BP-Wiki Pro and Custom Implementation are optional paid offerings. They are not 
 
 Pro Runtime is delivered as a paid content pack rather than as a paid plugin binary.
 
-The free plugin remains usable without payment. Version `1.0.4` does not include in-plugin checkout, account login, license validation, or automatic subscribed downloads.
+The free plugin remains usable without payment. Version `1.0.5` does not include in-plugin checkout, account login, license validation, or automatic subscribed downloads.
 
 Delivery flow:
 
 1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
 2. Open the V2 Early Access page from the plugin.
-3. Pay through the Afdian V2 item page for RMB users or PayPal for international users.
-4. Receive the Afdian automatic reply with delivery instructions.
-5. Receive `BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip` through the Afdian order message or PayPal follow-up.
-5. Follow the included installation guide.
+3. Pay by scanning the Alipay QR code for RMB users or through PayPal for international users.
+4. Receive delivery instructions through manual follow-up.
+5. Receive `BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip` through Alipay or PayPal follow-up.
+6. Follow the included installation guide.
 
 ## Early Access Payment Link
 
-RMB users can use the Afdian V2 item page:
+RMB users can scan the Alipay QR code:
 
-[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
+<img src="assets/alipay-jie-qr.jpg" alt="Alipay QR code" width="280">
 
 International users and custom inquiries can use this manual PayPal.Me channel:
 
@@ -40,7 +40,7 @@ International users and custom inquiries can use this manual PayPal.Me channel:
 
 ![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
 
-The QR code encodes the PayPal.Me URL above and does not display personal name information. These payment links are external manual payment and inquiry channels. They are not automated subscription systems, license servers, or in-plugin checkout flows in version `1.0.4`.
+The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These payment links are external manual payment and inquiry channels. They are not automated subscription systems, license servers, or in-plugin checkout flows in version `1.0.5`.
 
 ## Why Content Pack Delivery?
 
@@ -51,6 +51,6 @@ The QR code encodes the PayPal.Me URL above and does not display personal name i
 
 ## Current Availability
 
-In-plugin purchase, automatic renewal, and license activation are not active in version `1.0.4`.
+In-plugin purchase, automatic renewal, and license activation are not active in version `1.0.5`.
 
-For Pro or Custom inquiries, use Afdian, PayPal, or GitHub issues on this repository.
+For Pro or Custom inquiries, use Alipay, PayPal, or GitHub issues on this repository.

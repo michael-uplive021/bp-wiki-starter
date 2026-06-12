@@ -1,13 +1,13 @@
 {
   "id": "bp-wiki-starter",
   "name": "BP-Wiki Starter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minAppVersion": "1.8.0",
   "description": "Create bilingual starter vaults for knowledge work with 12 templates, setup guides, and optional BP-Wiki Pro upgrade paths.",
   "author": "Jie Huang",
   "authorUrl": "https://github.com/michael-uplive021",
   "fundingUrl": {
-    "RMB Early Access (Afdian)": "https://ifdian.net/item/e2f39c10505211f1a93452540025c377",
+    "RMB Early Access (Alipay QR)": "https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.jpg",
     "International (PayPal)": "https://paypal.me/michael061394"
   },
   "isDesktopOnly": false

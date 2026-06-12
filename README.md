@@ -8,7 +8,7 @@ BP-Wiki Starter 为 Obsidian 用户提供中英双语知识库启动结构，适
 
 - Install 12 bilingual vault templates.
 - Create a starter guide, edition comparison page, and template selector.
-- Create a V2 Early Access page with RMB and PayPal payment links plus installation steps.
+- Create a V2 Early Access page with Alipay QR and PayPal payment links plus installation steps.
 - Keep all generated files inside `BP-Wiki Starter/` unless you move them yourself.
 - Explain the differences between Free Starter, Pro Runtime, and Custom Implementation.
 
@@ -42,9 +42,9 @@ See [PRICING.md](PRICING.md) for the planned Pro and Custom pricing model.
 
 ## Early Access Payment
 
-For RMB users, use the Afdian V2 item page:
+For RMB users, scan the Alipay QR code:
 
-[ifdian.net/item/e2f39c10505211f1a93452540025c377](https://ifdian.net/item/e2f39c10505211f1a93452540025c377)
+<img src="assets/alipay-jie-qr.jpg" alt="Alipay QR code" width="280">
 
 For international users or custom inquiries, use PayPal:
 
@@ -52,19 +52,19 @@ For international users or custom inquiries, use PayPal:
 
 ![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
 
-The QR code encodes the PayPal.Me URL above and does not display personal name information. These are manual early-access payment and inquiry channels. Version `1.0.4` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
+The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These are manual early-access payment and inquiry channels. Version `1.0.5` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
 
 ## Optional Payments Disclosure
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Afdian, PayPal, or a future checkout provider. The current `1.0.4` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Alipay, PayPal, or a future checkout provider. The current `1.0.5` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
 
-BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Current delivery uses Afdian automatic reply plus order-message pack delivery; automated subscription purchase, automatic pack download, and license activation are not active in this plugin release.
+BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Current delivery uses manual payment follow-up; automated subscription purchase, automatic pack download, and license activation are not active in this plugin release.
 
 If future versions add license validation, account login, or automatic content-pack downloads, those features will be clearly disclosed in this README and in the plugin settings before release.
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.0.4` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
+This plugin runs locally inside your vault. Version `1.0.5` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
 
 ## Commands
 
@@ -72,7 +72,7 @@ This plugin runs locally inside your vault. Version `1.0.4` does not collect ana
 - `Open edition comparison`
 - `Open template selector`
 - `Open V2 early access`
-- `Open RMB payment page`
+- `Open Alipay QR code`
 - `Open PayPal payment page`
 
 ## Manual Installation
