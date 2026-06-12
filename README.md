@@ -44,19 +44,19 @@ See [PRICING.md](PRICING.md) for the planned Pro and Custom pricing model.
 
 For RMB users, scan the Alipay QR code:
 
-<img src="assets/alipay-jie-qr.jpg" alt="Alipay QR code" width="280">
+<img src="assets/alipay-jie-qr.png" alt="Alipay QR code" width="180">
 
 For international users or custom inquiries, use PayPal:
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
-![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
+<img src="assets/paypal-me-michael061394.svg" alt="PayPal.Me link QR code" width="180">
 
-The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These are manual early-access payment and inquiry channels. Version `1.0.5` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
+The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These are manual early-access payment and inquiry channels. Version `1.0.6` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
 
 ## Optional Payments Disclosure
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Alipay, PayPal, or a future checkout provider. The current `1.0.5` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
+BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Alipay, PayPal, or a future checkout provider. The current `1.0.6` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
 
 BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Current delivery uses manual payment follow-up; automated subscription purchase, automatic pack download, and license activation are not active in this plugin release.
 
@@ -64,7 +64,7 @@ If future versions add license validation, account login, or automatic content-p
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.0.5` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
+This plugin runs locally inside your vault. Version `1.0.6` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
 
 ## Commands
 

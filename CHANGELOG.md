@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.6
+
+- Replaced the full Alipay screenshot with a cropped QR-only image asset.
+- Removed visible Alipay banner text, recommendation text, bottom nickname, and scan instruction from the published QR image.
+- Matched Alipay and PayPal QR display widths in README, pricing, and generated V2 guidance.
+
 ## 1.0.5
 
 - Replaced the current RMB payment channel with a user-provided Alipay QR image.

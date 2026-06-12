@@ -1,7 +1,7 @@
 const { Notice, Plugin, PluginSettingTab, Setting, normalizePath } = require("obsidian");
 
 const STARTER_ROOT = "BP-Wiki Starter";
-const ALIPAY_QR_URL = "https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.jpg";
+const ALIPAY_QR_URL = "https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.png";
 const PAYPAL_URL = "https://paypal.me/michael061394";
 
 const TEMPLATES = [
@@ -372,9 +372,9 @@ Planned starting price: from $1,500 or RMB 9,800.
 
 ## Payment Status
 
-Version 1.0.5 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Alipay QR code, and international payment uses PayPal.
+Version 1.0.6 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Alipay QR code, and international payment uses PayPal.
 
-1.0.5 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用支付宝二维码，国际付款使用 PayPal。
+1.0.6 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用支付宝二维码，国际付款使用 PayPal。
 
 ## Early Access Payment
 
@@ -382,7 +382,7 @@ Early BP-Wiki Pro access and Custom Implementation inquiries can use:
 
 Alipay QR code:
 
-![Alipay QR code](https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.jpg)
+<img src="https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.png" alt="Alipay QR code" width="180">
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -392,7 +392,7 @@ These are external manual payment channels, not automated in-plugin subscription
 
 支付宝二维码：
 
-![支付宝二维码](https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.jpg)
+<img src="https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.png" alt="支付宝二维码" width="180">
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
@@ -445,7 +445,7 @@ V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文�
 
 ## Payment Links
 
-- RMB / 人民币: [Alipay QR code](https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.jpg)
+- RMB / 人民币: [Alipay QR code](https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.png)
 - International / 国际: [PayPal](https://paypal.me/michael061394)
 
 ## Installation Flow

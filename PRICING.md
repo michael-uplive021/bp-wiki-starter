@@ -17,7 +17,7 @@ BP-Wiki Pro and Custom Implementation are optional paid offerings. They are not 
 
 Pro Runtime is delivered as a paid content pack rather than as a paid plugin binary.
 
-The free plugin remains usable without payment. Version `1.0.5` does not include in-plugin checkout, account login, license validation, or automatic subscribed downloads.
+The free plugin remains usable without payment. Version `1.0.6` does not include in-plugin checkout, account login, license validation, or automatic subscribed downloads.
 
 Delivery flow:
 
@@ -32,15 +32,15 @@ Delivery flow:
 
 RMB users can scan the Alipay QR code:
 
-<img src="assets/alipay-jie-qr.jpg" alt="Alipay QR code" width="280">
+<img src="assets/alipay-jie-qr.png" alt="Alipay QR code" width="180">
 
 International users and custom inquiries can use this manual PayPal.Me channel:
 
 [paypal.me/michael061394](https://paypal.me/michael061394)
 
-![PayPal.Me link QR code](assets/paypal-me-michael061394.svg)
+<img src="assets/paypal-me-michael061394.svg" alt="PayPal.Me link QR code" width="180">
 
-The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These payment links are external manual payment and inquiry channels. They are not automated subscription systems, license servers, or in-plugin checkout flows in version `1.0.5`.
+The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These payment links are external manual payment and inquiry channels. They are not automated subscription systems, license servers, or in-plugin checkout flows in version `1.0.6`.
 
 ## Why Content Pack Delivery?
 
@@ -51,6 +51,6 @@ The Alipay QR image is a user-provided public payment QR image. The PayPal QR co
 
 ## Current Availability
 
-In-plugin purchase, automatic renewal, and license activation are not active in version `1.0.5`.
+In-plugin purchase, automatic renewal, and license activation are not active in version `1.0.6`.
 
 For Pro or Custom inquiries, use Alipay, PayPal, or GitHub issues on this repository.
