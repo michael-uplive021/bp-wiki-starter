@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Updated GitHub-facing README and Public OS Shell pages to use bilingual English / Chinese collapsible language sections.
+- Kept Public OS Shell as the core product story and starter templates as the onboarding layer in both languages.
+
 ## 1.1.3
 
 - Repositioned the public README around Public OS Shell as the core product path, with the free plugin serving as the entry layer.
