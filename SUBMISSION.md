@@ -15,7 +15,7 @@ https://github.com/michael-uplive021/bp-wiki-starter
   "id": "bp-wiki-starter",
   "name": "BP-Wiki Starter",
   "author": "Jie Huang",
-  "description": "Create bilingual starter vaults and a public-safe OS Shell for AI-ready Obsidian knowledge work.",
+  "description": "Create a free entry kit for BP-Wiki Public OS Shell and AI-ready Obsidian knowledge work.",
   "repo": "michael-uplive021/bp-wiki-starter"
 }
 ```
@@ -24,15 +24,17 @@ https://github.com/michael-uplive021/bp-wiki-starter
 
 Recommended label: `Free`
 
-Reason: version `1.1.2` does not include in-plugin purchase, external payment links, account login, license validation, paid content-pack delivery, telemetry, or background network requests.
+Reason: version `1.1.3` does not include in-plugin purchase, external payment links, account login, license validation, paid content-pack delivery, telemetry, or background network requests.
+
+The plugin may describe the separately distributed Public OS Shell package, but it does not sell, unlock, validate, or download paid material inside Obsidian.
 
 ## Required Release
 
 Create a GitHub release with:
 
 ```text
-Tag: 1.1.2
-Release name: 1.1.2
+Tag: 1.1.3
+Release name: 1.1.3
 ```
 
 Attach:
@@ -43,36 +45,24 @@ Attach:
 
 ## Disclosure Text
 
-BP-Wiki Starter is free to use. It creates starter templates and a public-safe BP-Wiki OS Shell inside the user's local Obsidian vault. It does not require payment, does not require an account, does not make background network requests, does not collect telemetry, and does not update itself.
-
-## Dashboard Submission Steps
-
-1. Go to `https://community.obsidian.md`.
-2. Sign in with your Obsidian account.
-3. Connect the GitHub account that owns the repository.
-4. Open the developer dashboard.
-5. Choose `Plugins`, then `New plugin`.
-6. Submit the GitHub repository URL.
-7. Confirm the developer policies and maintenance responsibility.
-8. Run the automated review.
-9. If the review passes, publish the plugin.
+BP-Wiki Starter is free to use. It creates a local starter kit for Public OS Shell inside the user's Obsidian vault. It does not require payment, does not require an account, does not make background network requests, does not collect telemetry, does not validate licenses, and does not update itself.
 
 ## Forum Announcement Draft
 
 Title:
 
 ```text
-BP-Wiki Starter: an AI-ready Obsidian starter kit
+BP-Wiki Starter: free entry kit for Public OS Shell
 ```
 
 Body:
 
 ```text
-BP-Wiki Starter is a free Obsidian plugin for starting an AI-ready knowledge workspace.
+BP-Wiki Starter is the free Obsidian entry point for Public OS Shell, a public-safe cognitive operating system shell for AI-assisted knowledge work.
 
-It includes 12 bilingual templates: PARA, Zettelkasten, GTD, Digital Garden, LYT + MOC, Evergreen Notes, Inbox + Tags, Daily + MOC, INKAPA, Cornell Notes, MOC Navigation, and Progressive Formalization.
+The plugin introduces the Public OS Shell model: dual-engine knowledge work, context gates, staging before promotion, agent contracts, night governance, and system evolution.
 
-It also includes Public OS Shell, a public-safe operating model for organizing inputs, projects, knowledge, skills, protocols, agents, and outputs without mixing shareable templates with private work.
+It also includes 12 bilingual starter templates for quick onboarding. The templates are the entry layer; Public OS Shell is the core product path.
 
-The goal is simple: help users start from workflow, add AI boundaries early, and avoid overbuilding a vault before the operating model is clear.
+The plugin is local-first and free. It does not process payment, require accounts, collect telemetry, or download paid material automatically.
 ```

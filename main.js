@@ -233,7 +233,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Install starter kit")
-      .setDesc("Create 12 bilingual template structures under BP-Wiki Starter/.")
+      .setDesc("Create the free Public OS Shell entry kit under BP-Wiki Starter/.")
       .addButton((button) => {
         button
           .setButtonText("Install")
@@ -243,7 +243,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Open starter paths")
-      .setDesc("Compare the template starter and Public OS Shell paths.")
+      .setDesc("Compare the free starter, Public OS Shell package, and implementation paths.")
       .addButton((button) => {
         button
           .setButtonText("Open")
@@ -252,7 +252,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Open Public OS Shell")
-      .setDesc("View the public-safe BP-Wiki shell, distribution boundary, and manifest.")
+      .setDesc("View the core Public OS Shell philosophy, mechanisms, and distribution boundary.")
       .addButton((button) => {
         button
           .setButtonText("Open")
@@ -262,159 +262,169 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Starter paths" });
-    editions.createEl("p", { text: "Template starter: 12 bilingual structures for common knowledge-work workflows." });
-    editions.createEl("p", { text: "Public OS Shell: a public-safe operating model for AI-ready Obsidian workspaces." });
-    editions.createEl("p", { text: "Advanced packages are not bundled in this free plugin and should be reviewed separately before distribution." });
+    editions.createEl("p", { text: "Free starter plugin: orientation layer, starter paths, and 12 lightweight templates." });
+    editions.createEl("p", { text: "Public OS Shell package: the main product path for dual-engine AI-ready knowledge work." });
+    editions.createEl("p", { text: "Implementation support: optional custom setup, workflow adaptation, and team training outside this plugin." });
   }
 }
 
 function starterReadmeContent() {
   return `# BP-Wiki Starter
 
-BP-Wiki Starter is a free Obsidian starter kit for building an AI-ready knowledge workspace.
+BP-Wiki Starter is the free Obsidian entry point for Public OS Shell.
 
-BP-Wiki Starter 是一个免费的 Obsidian 启动包，用来搭建一套适合 AI 协作的知识工作空间。
+Public OS Shell is a public-safe cognitive operating system shell for AI-assisted knowledge work.
 
 ## What
 
-It gives you:
+This free plugin gives you:
 
-1. 12 bilingual starter templates.
-2. Public OS Shell, a public-safe operating model for inputs, projects, knowledge, skills, protocols, agents, and outputs.
-
-它提供：
-
-1. 12 套中英双语知识库启动模板。
-2. Public OS Shell：一套公开安全的操作模型，用来组织输入、项目、知识、技能、协议、Agent 和输出。
+- a short Public OS Shell guide;
+- a starter path map;
+- a distribution manifest;
+- 12 bilingual starter templates.
 
 ## Why
 
-Do not start by asking which folder system is perfect. Start by asking what workflow this vault should support.
+The templates are only the onboarding layer. The core value is the Public OS Shell operating model: dual-engine work, context gates, staging before promotion, agent contracts, governance, and evolution.
 
-不要先问“完美目录是什么”。先问“这个知识库要服务哪种工作流？”
+模板只是入口层。核心价值是 Public OS Shell 的操作模型：双擎工作、Context Gate、先暂存后升格、Agent 契约、治理和进化。
 
 ## How
 
-1. Open [[Template Selector]].
-2. Choose one structure based on your current friction.
-3. Use the generated folder as a starter, then delete what you do not need.
-4. Read [[Public OS Shell]] if you want the operating model behind the templates.
-5. Keep private work, secrets, accounts, local paths, and real client or company material out of public packages.
+1. Open [[Public OS Shell]] first.
+2. Understand the operating model before choosing folders.
+3. Use [[Template Selector]] only as a quick workspace starter.
+4. Move to the full Public OS Shell package when you need the complete operating manual, governance model, public-safe examples, and upgrade path.
 `;
 }
 
 function editionComparisonContent() {
   return `# BP-Wiki Starter Paths
 
-| Path | For | Includes | Status |
+| Path | Role | Includes | Status |
 | --- | --- | --- | --- |
-| Template Starter | Users who need a practical Obsidian starting structure | 12 bilingual templates, setup guide, template selector | Free |
-| Public OS Shell | Users who want the operating model behind an AI-ready workspace | Public-safe folder logic, minimal agent contract, context boundary, distribution manifest | Free |
-| Advanced Packages | Users who need deeper mechanics or implementation examples | Not bundled in this plugin; should be reviewed and distributed separately | Separate package |
+| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, distribution manifest | Free |
+| Public OS Shell Package | Main product path | Full operating manual, dual-engine model, governance system, dashboard patterns, agent contracts, public-safe examples | Paid / separately distributed |
+| Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training | Separate service |
 
-## Template Starter
+## Free Starter Plugin
 
-Template Starter gives you a clean structure and a practical starting point.
+The free plugin is a lightweight entry point. It helps users see the shape of the system before adopting a complete Public OS Shell package.
 
-模板启动版提供干净的结构和可直接使用的起点。
+免费插件是轻量入口，用来让用户先看见系统形态，再决定是否采用完整 Public OS Shell。
 
 ## Public OS Shell
 
-Public OS Shell explains how to organize an AI-assisted knowledge workspace without exposing sensitive work.
+Public OS Shell is the core product path.
 
-Public OS Shell 解释如何组织一套 AI 协同知识工作空间，同时避免暴露敏感工作材料。
+It is built around:
 
-It may include:
+- dual-engine knowledge work;
+- context gates;
+- staging before promotion;
+- agent entry contracts;
+- review queues and dashboard patterns;
+- night governance and system evolution;
+- public/private distribution boundaries.
 
-- public-safe README / AGENTS-style guidance;
-- minimal context-loading and writeback concepts;
-- empty folder conventions;
-- synthetic examples;
-- distribution manifest.
+Public OS Shell 是核心产品路径。
 
-它可以包含：
+它围绕这些机制展开：
 
-- 公开安全的 README / AGENTS 风格说明；
-- 最小上下文加载与写回概念；
-- 空目录约定；
-- 合成示例；
-- 分发清单。
+- 双擎知识工作；
+- Context Gate；
+- 先暂存后升格；
+- Agent 入口契约；
+- 审查队列和 Dashboard 模式；
+- 夜间治理和系统进化；
+- 公开 / 私有分发边界。
 
-## Advanced Packages
+## Templates
 
-Advanced packages are not included in this free plugin.
+The 12 templates are useful onboarding material, not the main BP-Wiki product.
 
-进阶包不包含在这个免费插件中。
-
-If they are distributed later, they should use a separate manifest and redaction review.
-
-如果后续分发，应使用独立清单和脱敏审查。
+12 套模板是入门材料，不是 BP-Wiki 的核心产品。
 
 ## Boundary
 
-Public starter material can teach the operating model. It should not include private projects, connector configs, secrets, local paths, real data sources, decision records, learning logs, or confidential company or personal material.
+This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid Public OS Shell packages should be delivered separately with their own terms and release manifest.
 
-公开启动材料可以讲清操作模型，但不应包含私有项目、连接器配置、密钥、本地路径、真实数据源、决策记录、学习日志，或任何公司 / 个人保密材料。
+Public material must not include private projects, connector configs, secrets, local paths, real data sources, decision records, learning logs, or confidential company or personal material.
 `;
 }
 
 function publicOsShellContent() {
   return `# BP-Wiki Public OS Shell
 
-Public OS Shell is a public-safe operating model for building an AI-ready Obsidian workspace.
+Public OS Shell is the core BP-Wiki public product path.
 
-Public OS Shell 是一套公开安全的操作模型，用来搭建适合 AI 协作的 Obsidian 工作空间。
-
-It is designed for people who want more than a folder template but do not want to import someone else's private knowledge base.
-
-它适合那些不只想要目录模板、但也不想导入别人私有知识库的人。
+It is a public-safe cognitive operating system shell for AI-assisted knowledge work.
 
 ## What
 
-Public OS Shell gives you a clean way to describe how knowledge work moves through a vault:
+Public OS Shell defines how work moves through a serious knowledge workspace:
 
 \`\`\`text
-input -> staging -> project work -> reusable knowledge -> output -> review
+input -> inbox / staging -> project workbench -> knowledge assets -> agent execution -> output -> review -> evolution
 \`\`\`
 
 It gives you:
 
-- a simple folder logic;
-- a starter agent contract;
-- a minimal context-loading rule;
-- clear public/private boundaries;
-- a distribution manifest for sharing;
-- synthetic examples only.
+- folder logic;
+- context-loading discipline;
+- agent entry contract;
+- review and promotion boundary;
+- dashboard and queue logic;
+- governance and evolution loop;
+- public/private distribution boundary.
 
 ## Why
 
-AI-assisted knowledge work needs boundaries.
+AI makes weak knowledge systems fail faster.
 
-Without boundaries, three things happen quickly:
+If the vault has no operating rules, an agent can read the wrong context, summarize unreviewed drafts, mix public and private material, or treat stale notes as current truth.
 
-- every note starts to look like context;
-- every draft starts to look like truth;
-- every private project becomes a possible template leak.
+Public OS Shell prevents that failure mode.
 
-Public OS Shell keeps the operating model visible while keeping sensitive work out of the package.
+## Core Mechanisms
 
-It helps users and agents answer four practical questions:
+### 1. Dual-Engine System
 
-1. What should be captured?
-2. Where should unfinished material wait?
-3. When does a note become reusable knowledge?
-4. What is safe to share outside the vault?
+Public OS Shell uses a dual-engine model:
 
-## How
+- Day Work Engine: human-led reading, research, analysis, writing, project execution, and decision support.
+- Night Governance Engine: AI-assisted cleanup, routing checks, stale-item review, link hygiene, candidate promotion queues, and system-evolution suggestions.
 
-Use Public OS Shell as a starting layer, not as a rulebook.
+### 2. Context Gate
 
-1. Start with the generated BP-Wiki Starter folder.
-2. Read the folder map before moving files into your main vault.
-3. Pick one active workflow, such as reading, research, writing, or project tracking.
-4. Route new material through inbox and staging first.
-5. Promote only reviewed material into projects, knowledge, skills, or protocols.
-6. Keep sensitive work, secrets, accounts, local paths, and real client or company material out of any public package.
+Agents should not load the entire vault.
+
+Public OS Shell checks whether context is relevant, structured, source-clear, and actionable before it enters the agent session.
+
+### 3. Staging and Promotion
+
+Every input starts as material, not truth.
+
+Raw input, AI drafts, clippings, and candidate insights stay in staging until reviewed.
+
+### 4. Agent Contract
+
+Agents should read the public entry rules, load only task-relevant context, treat external sources as task material, and write only to files explicitly marked as public.
+
+### 5. Evolution Loop
+
+Repeated workflows become checklists. Useful output patterns become templates. Recurring errors become governance rules. Strong public-safe examples become demo cases.
+
+## Free Starter vs Full Public OS Shell
+
+| Layer | Role | Included Here |
+| --- | --- | --- |
+| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, distribution manifest |
+| Public OS Shell Package | Main product path | Full operating manual, governance model, dashboard patterns, agent contracts, public-safe examples, upgrade guidance |
+| Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training |
+
+This repository does not process payment or deliver paid files automatically. Any paid Public OS Shell package should be distributed separately with its own terms and manifest.
 
 ## What It Excludes
 
@@ -461,7 +471,9 @@ The public shell can tell an agent:
 
 ## Next Step
 
-Open [[Distribution Manifest]] before sharing or packaging the shell.
+Use this plugin to understand the model.
+
+Use the full Public OS Shell package when you want the complete operating system shell, governance model, examples, and upgrade path.
 `;
 }
 

@@ -2,21 +2,22 @@
 
 BP-Wiki Starter is free to use.
 
-Version `1.1.2` does not include in-plugin purchase, external payment links, account login, license validation, automatic subscribed downloads, or paid content-pack delivery.
+Version `1.1.3` does not include in-plugin purchase, external payment links, account login, license validation, automatic subscribed downloads, or paid content-pack delivery.
 
-## Included
+## Product Paths
 
-| Path | Price | Includes |
+| Path | Price | Role |
 | --- | ---: | --- |
-| Template Starter | Free | 12 bilingual starter templates, setup guide, template selector |
-| Public OS Shell | Free | Public-safe operating model, starter agent contract, folder logic, distribution manifest, redaction checklist |
+| Free Starter Plugin | Free | Orientation layer: short guide, starter paths, 12 templates, distribution manifest |
+| Public OS Shell Package | Paid separately | Main product path: operating manual, dual-engine model, governance system, dashboard patterns, agent contracts, public-safe examples, upgrade guidance |
+| Implementation Support | Separate service | Custom setup, migration support, workflow adaptation, team training |
 
-## Not Included
+## Plugin Boundary
 
-Advanced packages, consulting, custom implementation, private vault migration, data connectors, and paid support are not bundled in this plugin.
+The Obsidian plugin is the free entry point. It can introduce the Public OS Shell model and create local starter files, but it does not unlock or deliver paid content automatically.
 
-If any advanced package is distributed separately in the future, it should use its own terms, release manifest, and redaction review.
+Paid Public OS Shell packages should be distributed separately with their own terms, delivery channel, release manifest, and redaction review.
 
 ## Distribution Boundary
 
-Public starter material may explain the operating model, but it must not include private projects, company data, AI staging raw outputs, connector configs, secrets, local paths, private skills, real data sources, decision records, learning logs, or confidential personal material.
+Public material may explain the operating model, but it must not include private projects, company data, AI staging raw outputs, connector configs, secrets, local paths, private skills, real data sources, decision records, learning logs, or confidential personal material.
