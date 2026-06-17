@@ -1,0 +1,27 @@
+distribution_manifest:
+  distribution_mode: public_os_shell
+  public_version: public-v0.1
+  compatible_private_version: ""
+  source_private_commit: ""
+  export_profile: public_shell
+  generated_at: ""
+  generated_by: bp-wiki-starter
+  redaction_policy_version: public-os-shell-v0.1
+  files_included:
+    - README.md
+    - AGENTS-style public guidance
+    - PUBLIC_OS_SHELL.md
+    - minimal runtime notes
+    - synthetic examples
+  files_excluded:
+    - private projects
+    - AI Staging
+    - connector configs
+    - secrets and local paths
+    - private skills
+    - real data sources
+    - decision ledgers
+    - learning logs
+  synthetic_examples_only: true
+  contains_private_data: false
+  human_reviewed: false

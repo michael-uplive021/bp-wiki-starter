@@ -24,44 +24,28 @@ https://github.com/michael-uplive021/bp-wiki-starter
 
 ## Pricing Label
 
-Recommended label: `Optional payments`
+Recommended label: `Free`
 
-Reason: the Free Starter plugin works without payment, while BP-Wiki Pro and Custom services may be offered as optional paid upgrades outside the plugin.
+Reason: version `1.1.0` does not include in-plugin purchase, external payment links, license validation, or paid content-pack delivery. Public OS Shell is the public-safe BP-Wiki upgrade path.
 
-Planned pricing:
+Current distribution:
 
-| Edition | Price |
-| --- | ---: |
+| Edition | Status |
+| --- | --- |
 | Free Starter | Free |
-| V2 Early Access Pack | RMB 99 |
-| V2 Early Access + Updates | RMB 199 |
-| Custom Implementation | From $1,500 or RMB 9,800 |
+| Public OS Shell | Free public-safe starter material |
+| Developer Core | Not bundled |
+| Private Brain | Not distributed |
 
-Version `1.0.6` does not activate in-plugin payments, accounts, license validation, or automatic network downloads. Pricing is disclosed for product transparency.
-
-## Payment Links
-
-RMB early-access payment:
-
-```text
-https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.png
-```
-
-International payment and inquiry channel:
-
-```text
-https://paypal.me/michael061394
-```
-
-Both links are listed in the manifest `fundingUrl`. The plugin remains free and does not run an in-plugin checkout or subscription system in version `1.0.6`.
+Version `1.1.0` does not activate in-plugin payments, accounts, license validation, or automatic network downloads.
 
 ## Required Release
 
 Create a GitHub release with:
 
 ```text
-Tag: 1.0.6
-Release name: 1.0.6
+Tag: 1.1.0
+Release name: 1.1.0
 ```
 
 Attach:
@@ -72,7 +56,7 @@ Attach:
 
 ## Disclosure Text
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Alipay, PayPal, or a future checkout provider. Version `1.0.6` does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself. Payment buttons open external payment pages only when clicked.
+BP-Wiki Starter is free to use. Version `1.1.0` does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself. It creates starter templates and a public-safe BP-Wiki OS Shell inside the user's local Obsidian vault.
 
 ## Dashboard Submission Steps
 
@@ -103,5 +87,5 @@ It includes 12 templates: PARA, Zettelkasten, GTD, Digital Garden, LYT + MOC, Ev
 
 The goal is simple: help users choose a workflow-based vault structure before they overbuild their system.
 
-The plugin also explains the differences between Free Starter, BP-Wiki Pro Runtime, and Custom Implementation.
+The plugin also explains the differences between Free Starter, Public OS Shell, Developer Core, and Private Brain.
 ```
