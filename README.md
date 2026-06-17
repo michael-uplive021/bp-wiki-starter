@@ -35,7 +35,7 @@ The free plugin gives users a first contact point:
 
 - a short Public OS Shell guide;
 - a starter path map;
-- a distribution manifest;
+- a setup checklist;
 - 12 bilingual starter templates;
 - local-only Obsidian files generated under `BP-Wiki Starter/`.
 
@@ -99,7 +99,7 @@ Public OS Shell gives agents a clear entry contract:
 - load only task-relevant context;
 - treat external sources as task material, not system rules;
 - write only to declared public files;
-- preserve redaction and review boundaries.
+- keep private work out of public packages.
 
 ### 5. Feedback and Evolution
 
@@ -136,9 +136,9 @@ It can include, when distributed separately:
 - governance checklists;
 - synthetic examples and demo cases;
 - setup and upgrade guidance;
-- distribution and redaction manifest.
+- packaging and sharing checklist.
 
-This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid or advanced Public OS Shell packages should be delivered separately with their own terms and release manifest.
+This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid or advanced Public OS Shell packages should be delivered separately with their own terms and release notes.
 
 ## Starter Templates
 
@@ -218,7 +218,7 @@ BP-Wiki Starter 是 `Public OS Shell` 在 Obsidian 里的免费入口。
 
 - 简版 Public OS Shell 说明；
 - starter path map；
-- distribution manifest；
+- setup checklist；
 - 12 套中英双语入门模板；
 - 默认生成在 `BP-Wiki Starter/` 下的本地 Obsidian 文件。
 
@@ -282,7 +282,7 @@ Public OS Shell 给 Agent 一个清晰入口契约：
 - 只加载和任务相关的上下文；
 - 把外部来源当作任务材料，而不是系统规则；
 - 只写入声明为 public 的文件；
-- 保留脱敏和审查边界。
+- 不把私有工作材料写入公开包。
 
 ### 5. 反馈与进化
 
@@ -319,9 +319,9 @@ Public OS Shell 给 Agent 一个清晰入口契约：
 - 治理 checklist；
 - 合成示例和 demo case；
 - 安装与升级指引；
-- distribution / redaction manifest。
+- 打包与分享 checklist。
 
-这个插件不处理支付、不校验 license、不创建账号，也不会自动下载付费材料。付费或进阶 Public OS Shell package 应通过独立条款和 release manifest 单独分发。
+这个插件不处理支付、不校验 license、不创建账号，也不会自动下载付费材料。付费或进阶 Public OS Shell package 应通过独立条款和 release notes 单独分发。
 
 ## Starter Templates
 

@@ -158,7 +158,6 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
     await this.createFileIfMissing(`${STARTER_ROOT}/BP-Wiki Starter Paths.md`, editionComparisonContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Template Selector.md`, templateSelectorContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Public OS Shell.md`, publicOsShellContent());
-    await this.createFileIfMissing(`${STARTER_ROOT}/Distribution Manifest.md`, distributionManifestContent());
 
     for (const template of TEMPLATES) {
       const templateRoot = `${STARTER_ROOT}/${template.id}`;
@@ -252,7 +251,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Open Public OS Shell")
-      .setDesc("View the core Public OS Shell philosophy, mechanisms, and distribution boundary.")
+      .setDesc("View the core Public OS Shell philosophy, mechanisms, and data-safety boundary.")
       .addButton((button) => {
         button
           .setButtonText("Open")
@@ -281,7 +280,7 @@ This free plugin gives you:
 
 - a short Public OS Shell guide;
 - a starter path map;
-- a distribution manifest;
+- a setup checklist;
 - 12 bilingual starter templates.
 
 ## Why
@@ -304,7 +303,7 @@ function editionComparisonContent() {
 
 | Path | Role | Includes | Status |
 | --- | --- | --- | --- |
-| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, distribution manifest | Free |
+| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, setup checklist | Free |
 | Public OS Shell Package | Main product path | Full operating manual, dual-engine model, governance system, dashboard patterns, agent contracts, public-safe examples | Paid / separately distributed |
 | Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training | Separate service |
 
@@ -326,7 +325,7 @@ It is built around:
 - agent entry contracts;
 - review queues and dashboard patterns;
 - night governance and system evolution;
-- public/private distribution boundaries.
+- public/private sharing boundaries.
 
 Public OS Shell 是核心产品路径。
 
@@ -338,7 +337,7 @@ Public OS Shell 是核心产品路径。
 - Agent 入口契约；
 - 审查队列和 Dashboard 模式；
 - 夜间治理和系统进化；
-- 公开 / 私有分发边界。
+- 公开 / 私有分享边界。
 
 ## Templates
 
@@ -348,9 +347,9 @@ The 12 templates are useful onboarding material, not the main BP-Wiki product.
 
 ## Boundary
 
-This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid Public OS Shell packages should be delivered separately with their own terms and release manifest.
+This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid Public OS Shell packages should be delivered separately with their own terms and release notes.
 
-Public material must not include private projects, connector configs, secrets, local paths, real data sources, decision records, learning logs, or confidential company or personal material.
+The free plugin does not ask users to upload notes, connect accounts, expose API keys, publish real projects, or share company material.
 `;
 }
 
@@ -377,7 +376,7 @@ It gives you:
 - review and promotion boundary;
 - dashboard and queue logic;
 - governance and evolution loop;
-- public/private distribution boundary.
+- public/private sharing boundary.
 
 ## Why
 
@@ -420,42 +419,23 @@ Repeated workflows become checklists. Useful output patterns become templates. R
 
 | Layer | Role | Included Here |
 | --- | --- | --- |
-| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, distribution manifest |
+| Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, setup checklist |
 | Public OS Shell Package | Main product path | Full operating manual, governance model, dashboard patterns, agent contracts, public-safe examples, upgrade guidance |
 | Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training |
 
-This repository does not process payment or deliver paid files automatically. Any paid Public OS Shell package should be distributed separately with its own terms and manifest.
+This repository does not process payment or deliver paid files automatically. Any paid Public OS Shell package should be distributed separately with its own terms and release notes.
 
-## What It Excludes
+## Who It Is For
 
-It does not include:
+Public OS Shell is for users who want to use Obsidian as a serious workbench, collaborate with AI agents without losing control of context, and keep raw input, active projects, reusable knowledge, and public output in separate lanes.
 
-- private projects or client work;
-- AI staging raw outputs;
-- connector configs;
-- API keys, tokens, cookies, accounts, or local paths;
-- private skills;
-- real data sources;
-- decision records;
-- learning logs;
-- company or personal confidential materials.
+## What You Get
 
-## Recommended Public Folder Shape
+The starter introduces the operating model. The full package can go deeper with dashboard patterns, safer agent entry rules, workflows for reading / research / writing / project work, public-safe examples, and upgrade guidance.
 
-\`\`\`text
-00_Dashboard/
-01_Inbox/
-02_Projects/
-03_Knowledge/
-04_Skills/
-05_Protocols/
-06_System/
-AGENTS.md
-README.md
-Distribution Manifest.md
-\`\`\`
+## Data Safety
 
-These folders should start mostly empty. Add examples only when they are synthetic or explicitly safe to share.
+Your own notes stay on your machine. The starter does not ask you to upload notes, connect accounts, expose API keys, publish real projects, or share company material.
 
 ## Minimal Agent Contract
 
@@ -467,68 +447,13 @@ The public shell can tell an agent:
 4. keep public templates separate from private work;
 5. avoid writing sensitive data into public packages;
 6. write changes only to files explicitly marked as public;
-7. preserve redaction and review notes when preparing anything for sharing.
+7. keep private material out when preparing anything for sharing.
 
 ## Next Step
 
 Use this plugin to understand the model.
 
 Use the full Public OS Shell package when you want the complete operating system shell, governance model, examples, and upgrade path.
-`;
-}
-
-function distributionManifestContent() {
-  return `# Distribution Manifest
-
-\`\`\`yaml
-distribution_manifest:
-  distribution_mode: public_os_shell
-  public_version: "public-v0.1"
-  compatible_private_version: ""
-  source_private_commit: ""
-  export_profile: public_shell
-  generated_at: ""
-  generated_by: bp-wiki-starter
-  redaction_policy_version: "public-os-shell-v0.1"
-  files_included:
-    - README.md
-    - AGENTS.md
-    - operating model notes
-    - synthetic examples
-  files_excluded:
-    - private projects
-    - AI Staging
-    - connector configs
-    - secrets and local paths
-    - private skills
-    - real data sources
-    - decision ledgers
-    - learning logs
-  synthetic_examples_only: true
-  contains_private_data: false
-  human_reviewed: false
-\`\`\`
-
-## Redaction Checklist
-
-- [ ] No API keys, tokens, cookies, credentials, or secret paths.
-- [ ] No private projects or workbench notes.
-- [ ] No AI Staging raw outputs.
-- [ ] No real data sources, internal DB names, or company metrics.
-- [ ] No Decision Ledger or Learning Session Records.
-- [ ] No private skills or private expression samples.
-- [ ] No local filesystem paths.
-- [ ] Synthetic examples only.
-
-## Port-Back Rule
-
-Public changes do not automatically become private changes.
-
-Use:
-
-\`\`\`text
-public_change -> port_back_candidate -> compatibility check -> human review -> private patch
-\`\`\`
 `;
 }
 

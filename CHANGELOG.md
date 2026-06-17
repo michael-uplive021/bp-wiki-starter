@@ -1,9 +1,11 @@
 # Changelog
 
-## Unreleased
+## 1.1.4
 
 - Updated GitHub-facing README and Public OS Shell pages to use bilingual English / Chinese collapsible language sections.
 - Kept Public OS Shell as the core product story and starter templates as the onboarding layer in both languages.
+- Removed internal packaging artifacts from the public-facing repo and generated starter kit.
+- Rewrote internal exclusion language into audience-facing value, fit, and data-safety language.
 
 ## 1.1.3
 
@@ -17,7 +19,7 @@
 - Rewrote the public README around What / Why / How so the repository reads as an external starter product.
 - Reframed Public OS Shell as a public-safe operating model for AI-ready Obsidian workspaces.
 - Replaced version-heavy plugin copy with starter paths: Template Starter, Public OS Shell, and separately reviewed advanced packages.
-- Updated pricing and community-submission copy to avoid internal version details and keep the public distribution boundary explicit.
+- Updated pricing and community-submission copy to avoid internal version details and keep the public sharing boundary explicit.
 
 ## 1.1.1
 
@@ -29,7 +31,7 @@
 ## 1.1.0
 
 - Replaced earlier paid-pack messaging with the free Public OS Shell path.
-- Added generated Public OS Shell and Distribution Manifest notes.
+- Added generated Public OS Shell starter notes.
 - Removed payment-related commands, links, and funding metadata.
 - Clarified that the plugin ships public-safe starter material only.
 
