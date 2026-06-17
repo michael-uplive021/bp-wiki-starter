@@ -11,7 +11,7 @@ distribution_manifest:
     - README.md
     - AGENTS-style public guidance
     - PUBLIC_OS_SHELL.md
-    - minimal runtime notes
+    - operating model notes
     - synthetic examples
   files_excluded:
     - private projects

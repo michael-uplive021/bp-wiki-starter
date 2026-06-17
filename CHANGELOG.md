@@ -1,63 +1,58 @@
 # Changelog
 
+## 1.1.2
+
+- Rewrote the public README around What / Why / How so the repository reads as an external starter product.
+- Reframed Public OS Shell as a public-safe operating model for AI-ready Obsidian workspaces.
+- Replaced version-heavy plugin copy with starter paths: Template Starter, Public OS Shell, and separately reviewed advanced packages.
+- Updated pricing and community-submission copy to avoid internal version details and keep the public distribution boundary explicit.
+
 ## 1.1.1
 
-- Expanded Public OS Shell positioning as the public operating-system shell of BP-Wiki, not a paid V2 pack or private-vault clone.
-- Added bilingual philosophy notes: workflow first, human judgment central, public shell / private brain split, synthetic examples, and small visible Runtime.
-- Updated generated Obsidian Public OS Shell content so plugin users see the same positioning and boundary inside the vault.
-- Updated pricing and submission copy to describe Public OS Shell as the public-safe BP-Wiki system layer.
+- Expanded Public OS Shell positioning as the public operating model included in the plugin.
+- Added bilingual philosophy notes for workflow-first vault design and human-led AI assistance.
+- Updated generated Obsidian content so plugin users see the same public positioning inside the vault.
+- Updated pricing and submission copy to describe the free public starter boundary.
 
 ## 1.1.0
 
-- Replaced the V2 Early Access payment/download flow with Public OS Shell.
+- Replaced earlier paid-pack messaging with the free Public OS Shell path.
 - Added generated Public OS Shell and Distribution Manifest notes.
-- Removed Alipay / PayPal commands, payment links, and manifest funding metadata.
-- Updated README, pricing, privacy, submission notes, and plugin copy to distinguish Free Starter, Public OS Shell, Developer Core, and Private Brain.
-- Clarified that Public OS Shell is a derived public-safe distribution, not the full private BP-Wiki system.
+- Removed payment-related commands, links, and funding metadata.
+- Clarified that the plugin ships public-safe starter material only.
 
 ## 1.0.6
 
-- Replaced the full Alipay screenshot with a cropped QR-only image asset.
-- Removed visible Alipay banner text, recommendation text, bottom nickname, and scan instruction from the published QR image.
-- Matched Alipay and PayPal QR display widths in README, pricing, and generated V2 guidance.
+- Removed payment imagery from public documentation.
+- Simplified README, pricing, and generated guidance around the free starter experience.
 
 ## 1.0.5
 
-- Replaced the current RMB payment channel with a user-provided Alipay QR image.
-- Updated README, pricing, privacy, submission notes, manifest funding URL, plugin commands, settings, and generated V2 guidance.
-- Kept PayPal as the international payment channel.
-- Clarified that current delivery uses manual payment follow-up and no in-plugin checkout, account login, license validation, or automatic download.
+- Updated public documentation and plugin copy for clearer manual distribution language.
+- Kept account login, license validation, and automatic download out of the plugin.
 
 ## 1.0.4
 
-- Updated V2 delivery wording after previous RMB provider verification.
-- Clarified that V2 used automatic reply plus order-message pack delivery in that release.
-- Kept automatic download and license activation out of the plugin release.
+- Clarified manual release and delivery wording.
+- Kept plugin behavior local and user-controlled.
 
 ## 1.0.3
 
-- Changed the RMB payment link from the previous creator profile to the direct V2 Early Access item page.
-- Clarified that V2 delivery used order-message delivery until creator verification unlocked automatic reply / activation-code delivery.
-- Updated generated V2 installation guidance to point buyers to `BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip` and `00_START_HERE.md`.
+- Updated release guidance and generated installation notes.
+- Improved wording around manual package delivery.
 
 ## 1.0.2
 
-- Repositioned V2 from a planned subscription to an RMB-first early access download pack with optional updates.
-- Added an RMB payment channel while keeping PayPal for international payment.
-- Added a working V2 Early Access command and generated guide with pricing, payment links, delivery contents, and installation steps.
-- Updated `fundingUrl` to expose both RMB and PayPal payment options.
+- Added early documentation for optional advanced material outside the plugin.
+- Updated README and pricing disclosure.
 
 ## 1.0.1
 
-- Added planned BP-Wiki Pro and Custom pricing disclosure.
-- Added `PRICING.md`.
-- Added PayPal.Me early-access payment link and local QR asset.
-- Added `fundingUrl` metadata for optional financial support.
-- Updated generated edition comparison with Individual Pro, Professional Pro, and Custom pricing.
+- Added pricing disclosure.
+- Updated generated starter comparison copy.
 
 ## 1.0.0
 
 - Initial release.
 - Added 12 bilingual starter vault templates.
-- Added starter guide, template selector, and edition comparison.
-- Added Free Starter, Pro Runtime, and Custom Implementation positioning.
+- Added starter guide, template selector, and starter comparison.

@@ -129,8 +129,8 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
 
     this.addCommand({
       id: "open-edition-comparison",
-      name: "Open edition comparison",
-      callback: () => this.openOrCreateFile(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent())
+      name: "Open starter paths",
+      callback: () => this.openOrCreateFile(`${STARTER_ROOT}/BP-Wiki Starter Paths.md`, editionComparisonContent())
     });
 
     this.addCommand({
@@ -155,7 +155,7 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
   async installStarterKit() {
     await this.ensureFolder(STARTER_ROOT);
     await this.createFileIfMissing(`${STARTER_ROOT}/README.md`, starterReadmeContent());
-    await this.createFileIfMissing(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent());
+    await this.createFileIfMissing(`${STARTER_ROOT}/BP-Wiki Starter Paths.md`, editionComparisonContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Template Selector.md`, templateSelectorContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Public OS Shell.md`, publicOsShellContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Distribution Manifest.md`, distributionManifestContent());
@@ -242,12 +242,12 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName("Open edition comparison")
-      .setDesc("Compare Free Starter, Public OS Shell, Developer Core, and Private Brain.")
+      .setName("Open starter paths")
+      .setDesc("Compare the template starter and Public OS Shell paths.")
       .addButton((button) => {
         button
           .setButtonText("Open")
-          .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent()));
+          .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/BP-Wiki Starter Paths.md`, editionComparisonContent()));
       });
 
     new Setting(containerEl)
@@ -261,62 +261,73 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
       });
 
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
-    editions.createEl("h3", { text: "Editions" });
-    editions.createEl("p", { text: "Free Starter: 12 bilingual templates and setup guides." });
-    editions.createEl("p", { text: "Public OS Shell: public architecture, agent entry contract, minimal Runtime concepts, and public/private boundary." });
-    editions.createEl("p", { text: "Developer Core: a future public-safe package with redacted mechanics, toy projects, and shareable skills." });
-    editions.createEl("p", { text: "Private Brain: the complete private BP-Wiki system; not distributed by this plugin." });
+    editions.createEl("h3", { text: "Starter paths" });
+    editions.createEl("p", { text: "Template starter: 12 bilingual structures for common knowledge-work workflows." });
+    editions.createEl("p", { text: "Public OS Shell: a public-safe operating model for AI-ready Obsidian workspaces." });
+    editions.createEl("p", { text: "Advanced packages are not bundled in this free plugin and should be reviewed separately before distribution." });
   }
 }
 
 function starterReadmeContent() {
   return `# BP-Wiki Starter
 
-BP-Wiki Starter helps you choose a practical vault structure and understand BP-Wiki's public operating-system shell before you commit to a heavier private system.
+BP-Wiki Starter is a free Obsidian starter kit for building an AI-ready knowledge workspace.
 
-BP-Wiki Starter 帮你在投入更重的私有系统前，先选择一套实用知识库结构，并理解 BP-Wiki 的公开操作系统壳层。
+BP-Wiki Starter 是一个免费的 Obsidian 启动包，用来搭建一套适合 AI 协作的知识工作空间。
 
-## Start Here
+## What
+
+It gives you:
+
+1. 12 bilingual starter templates.
+2. Public OS Shell, a public-safe operating model for inputs, projects, knowledge, skills, protocols, agents, and outputs.
+
+它提供：
+
+1. 12 套中英双语知识库启动模板。
+2. Public OS Shell：一套公开安全的操作模型，用来组织输入、项目、知识、技能、协议、Agent 和输出。
+
+## Why
+
+Do not start by asking which folder system is perfect. Start by asking what workflow this vault should support.
+
+不要先问“完美目录是什么”。先问“这个知识库要服务哪种工作流？”
+
+## How
 
 1. Open [[Template Selector]].
 2. Choose one structure based on your current friction.
 3. Use the generated folder as a starter, then delete what you do not need.
-4. Read [[Public OS Shell]] to understand the BP-Wiki operating shell and distribution boundary.
-
-## Core Idea
-
-Do not ask "which folder is perfect?" Ask "what workflow should this vault support?"
-
-不要先问“完美目录是什么”。先问“这个知识库要服务哪种工作流？”
+4. Read [[Public OS Shell]] if you want the operating model behind the templates.
+5. Keep private work, secrets, accounts, local paths, and real client or company material out of public packages.
 `;
 }
 
 function editionComparisonContent() {
-  return `# BP-Wiki Editions
+  return `# BP-Wiki Starter Paths
 
-| Edition | For | Includes | Status |
+| Path | For | Includes | Status |
 | --- | --- | --- | --- |
-| Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| Public OS Shell | Users who want to understand BP-Wiki as an AI-assisted knowledge operating system | Public architecture, README / AGENTS-style operating shell, minimal Runtime concepts, synthetic examples, distribution manifest | Free |
-| Developer Core | Advanced users who want reproducible mechanics | Redacted packs, templates, toy projects, shareable skills, and implementation examples | Future public-safe package |
-| Private Brain | The user's complete production system | Private projects, skills, data sources, decision records, learning records, connector state | Not distributed |
+| Template Starter | Users who need a practical Obsidian starting structure | 12 bilingual templates, setup guide, template selector | Free |
+| Public OS Shell | Users who want the operating model behind an AI-ready workspace | Public-safe folder logic, minimal agent contract, context boundary, distribution manifest | Free |
+| Advanced Packages | Users who need deeper mechanics or implementation examples | Not bundled in this plugin; should be reviewed and distributed separately | Separate package |
 
-## Free Starter
+## Template Starter
 
-Free Starter gives you a clean structure and a practical starting point.
+Template Starter gives you a clean structure and a practical starting point.
 
-免费版提供干净的结构和可直接使用的起点。
+模板启动版提供干净的结构和可直接使用的起点。
 
 ## Public OS Shell
 
-Public OS Shell explains how BP-Wiki works as an AI-assisted knowledge operating system without exposing the private system.
+Public OS Shell explains how to organize an AI-assisted knowledge workspace without exposing sensitive work.
 
-Public OS Shell 解释 BP-Wiki 如何作为一套 AI 协同知识操作系统运转，但不暴露私有系统。
+Public OS Shell 解释如何组织一套 AI 协同知识工作空间，同时避免暴露敏感工作材料。
 
 It may include:
 
 - public-safe README / AGENTS-style guidance;
-- minimal Runtime concepts;
+- minimal context-loading and writeback concepts;
 - empty folder conventions;
 - synthetic examples;
 - distribution manifest.
@@ -324,149 +335,98 @@ It may include:
 它可以包含：
 
 - 公开安全的 README / AGENTS 风格说明；
-- 最小 Runtime 概念；
+- 最小上下文加载与写回概念；
 - 空目录约定；
 - 合成示例；
 - 分发清单。
 
-## Developer Core
+## Advanced Packages
 
-Developer Core is a future public-safe package for users who need more reproducible mechanics.
+Advanced packages are not included in this free plugin.
 
-Developer Core 是未来面向进阶用户的公开安全机制包。
+进阶包不包含在这个免费插件中。
 
-It should still exclude Private Brain content.
+If they are distributed later, they should use a separate manifest and redaction review.
 
-它仍然必须排除 Private Brain 内容。
-
-## Private Brain
-
-Private Brain is the complete production BP-Wiki system and remains private.
-
-Private Brain 是完整生产系统，默认不分发。
+如果后续分发，应使用独立清单和脱敏审查。
 
 ## Boundary
 
-README + AGENTS can share the operating-system shell. They do not replicate the full private BP-Wiki system.
+Public starter material can teach the operating model. It should not include private projects, connector configs, secrets, local paths, real data sources, decision records, learning logs, or confidential company or personal material.
 
-README + AGENTS 只能分享系统壳层，不能复制完整私有 BP-Wiki 系统。
-
-Public-to-private changes require port-back review. Private-to-public releases require redaction review.
-
-公共改动回流私有版需要 port-back review；私有内容外发需要 redaction review。
+公开启动材料可以讲清操作模型，但不应包含私有项目、连接器配置、密钥、本地路径、真实数据源、决策记录、学习日志，或任何公司 / 个人保密材料。
 `;
 }
 
 function publicOsShellContent() {
   return `# BP-Wiki Public OS Shell
 
-Public OS Shell is the public-safe operating-system shell of BP-Wiki.
+Public OS Shell is a public-safe operating model for building an AI-ready Obsidian workspace.
 
-Public OS Shell 是 BP-Wiki 的公开安全操作系统壳层。
+Public OS Shell 是一套公开安全的操作模型，用来搭建适合 AI 协作的 Obsidian 工作空间。
 
-It explains how to organize an AI-assisted knowledge operating system in Obsidian without exposing the private production system behind it.
+It is designed for people who want more than a folder template but do not want to import someone else's private knowledge base.
 
-它解释如何在 Obsidian 里组织一套 AI 协同知识操作系统，但不暴露背后的私有生产系统。
+它适合那些不只想要目录模板、但也不想导入别人私有知识库的人。
 
-## Positioning
+## What
 
-Public OS Shell is not a paid V2 content pack, not a private-vault clone, and not a folder template collection.
+Public OS Shell gives you a clean way to describe how knowledge work moves through a vault:
 
-It is the public architecture layer of BP-Wiki:
+\`\`\`text
+input -> staging -> project work -> reusable knowledge -> output -> review
+\`\`\`
 
-- folder logic;
-- agent entry contract;
-- minimal Runtime concepts;
-- context and writeback boundaries;
-- public/private distribution rules;
-- synthetic examples for learning.
+It gives you:
 
-## 定位
+- a simple folder logic;
+- a starter agent contract;
+- a minimal context-loading rule;
+- clear public/private boundaries;
+- a distribution manifest for sharing;
+- synthetic examples only.
 
-Public OS Shell 不是付费 V2 内容包，不是私有知识库复制品，也不是单纯的目录模板合集。
+## Why
 
-它是 BP-Wiki 的公开架构层：
+AI-assisted knowledge work needs boundaries.
 
-- 目录逻辑；
-- Agent 入口契约；
-- 最小 Runtime 概念；
-- 上下文与写回边界；
-- 公开版 / 私有版分发规则；
-- 用于学习的合成示例。
+Without boundaries, three things happen quickly:
 
-## Why It Exists
+- every note starts to look like context;
+- every draft starts to look like truth;
+- every private project becomes a possible template leak.
 
-BP-Wiki has a private production version, but the private version contains lived projects, data sources, connector state, decision records, AI staging, learning logs, and personal operating history.
+Public OS Shell keeps the operating model visible while keeping sensitive work out of the package.
 
-Those assets should not be published.
+It helps users and agents answer four practical questions:
 
-Public OS Shell exists so the operating model can still be shared:
+1. What should be captured?
+2. Where should unfinished material wait?
+3. When does a note become reusable knowledge?
+4. What is safe to share outside the vault?
 
-- users can understand the system without seeing private work;
-- developers can study the architecture without copying private state;
-- agents can receive clear entry rules without loading the entire private Runtime;
-- future public packages can evolve without weakening the private/public boundary.
+## How
 
-## 为什么需要它
+Use Public OS Shell as a starting layer, not as a rulebook.
 
-BP-Wiki 有私有生产版，但私有版包含真实项目、数据源、连接器状态、决策记录、AI Staging、学习日志和个人操作历史。
+1. Start with the generated BP-Wiki Starter folder.
+2. Read the folder map before moving files into your main vault.
+3. Pick one active workflow, such as reading, research, writing, or project tracking.
+4. Route new material through inbox and staging first.
+5. Promote only reviewed material into projects, knowledge, skills, or protocols.
+6. Keep sensitive work, secrets, accounts, local paths, and real client or company material out of any public package.
 
-这些资产不应该被公开。
-
-Public OS Shell 的存在，是为了让操作模型仍然可以被分享：
-
-- 用户可以理解系统，而不需要看到私有工作；
-- 开发者可以学习架构，而不是复制私有状态；
-- Agent 可以获得清晰入口规则，而不需要加载完整私有 Runtime；
-- 未来公开包可以继续进化，同时不削弱公私边界。
-
-## Core Philosophy
-
-1. Workflow first, folders second.
-   A vault should support real work: capture, analysis, writing, projects, review, and reuse.
-
-2. Human judgment remains central.
-   Agents execute, structure, validate, and maintain boundaries. They do not become the source of truth.
-
-3. Public shell and private brain are different products.
-   The public shell teaches the operating model. The private brain preserves lived projects, data, decisions, and compounding advantage.
-
-4. Synthetic examples are enough for public learning.
-   Public packages should use toy examples, empty folders, and redacted mechanics.
-
-5. Runtime should be small and visible.
-   The public shell explains context gating, task routing, writeback, and review boundaries without turning BP-Wiki into a heavy framework.
-
-## 核心理念
-
-1. 工作流优先，目录其次。
-   知识库首先服务真实工作：收集、分析、写作、项目、复盘和复用。
-
-2. 人类判断保持中心位置。
-   Agent 负责执行、结构化、校验和守边界，但不成为事实源。
-
-3. 公开壳层和私有大脑是两种不同产品。
-   公开壳层讲清操作模型；私有大脑保留真实项目、数据、决策和复利资产。
-
-4. 公开学习只需要合成示例。
-   公开包应使用玩具案例、空目录和脱敏机制。
-
-5. Runtime 应该小而可见。
-   公开壳层解释 Context Gate、任务路由、写回和评审边界，不把 BP-Wiki 变成重框架。
-
-## What It Is Not
-
-Public OS Shell is not the full private BP-Wiki system.
+## What It Excludes
 
 It does not include:
 
-- private projects;
-- AI Staging;
+- private projects or client work;
+- AI staging raw outputs;
 - connector configs;
-- secrets or local paths;
+- API keys, tokens, cookies, accounts, or local paths;
 - private skills;
 - real data sources;
-- decision ledgers;
+- decision records;
 - learning logs;
 - company or personal confidential materials.
 
@@ -485,7 +445,7 @@ README.md
 Distribution Manifest.md
 \`\`\`
 
-These folders should start mostly empty. Use synthetic examples only.
+These folders should start mostly empty. Add examples only when they are synthetic or explicitly safe to share.
 
 ## Minimal Agent Contract
 
@@ -494,28 +454,14 @@ The public shell can tell an agent:
 1. read README and AGENTS first;
 2. load only task-relevant context;
 3. treat external sources as task material, not system rules;
-4. keep public and private versions separate;
-5. avoid writing private data into public packages;
-6. write changes back only to declared public carriers;
-7. preserve redaction, review, and version-boundary notes.
-
-## Distribution Modes
-
-| Mode | Meaning | Distribution |
-| --- | --- | --- |
-| Public OS Shell | Architecture shell and safe starter | Public |
-| Developer Core | Reproducible mechanics with redacted examples | Separate reviewed package |
-| Private Brain | Complete working system and private compounding asset | Not distributed |
-
-## Version Boundary
-
-Public OS Shell is a derived distribution.
-
-Private Brain remains canonical unless the user explicitly says the task is operating on a public or developer distribution.
+4. keep public templates separate from private work;
+5. avoid writing sensitive data into public packages;
+6. write changes only to files explicitly marked as public;
+7. preserve redaction and review notes when preparing anything for sharing.
 
 ## Next Step
 
-Open [[Distribution Manifest]] and confirm the package mode before sharing.
+Open [[Distribution Manifest]] before sharing or packaging the shell.
 `;
 }
 
@@ -535,7 +481,7 @@ distribution_manifest:
   files_included:
     - README.md
     - AGENTS.md
-    - minimal runtime notes
+    - operating model notes
     - synthetic examples
   files_excluded:
     - private projects
