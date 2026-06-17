@@ -1,16 +1,16 @@
 # BP-Wiki Starter
 
-BP-Wiki Starter creates bilingual starter vault structures for Obsidian users who want a cleaner knowledge-work system without building everything from scratch.
+BP-Wiki Starter creates bilingual starter vault structures and a public-safe BP-Wiki OS Shell for Obsidian users who want a cleaner knowledge-work system without building everything from scratch.
 
-BP-Wiki Starter 为 Obsidian 用户提供中英双语知识库启动结构，适合学习、研究、写作、项目管理和长期知识沉淀。
+BP-Wiki Starter 为 Obsidian 用户提供中英双语知识库启动结构和可公开分享的 BP-Wiki OS Shell，适合学习、研究、写作、项目管理和长期知识沉淀。
 
 ## What It Does
 
 - Install 12 bilingual vault templates.
 - Create a starter guide, edition comparison page, and template selector.
-- Create a V2 Early Access page with Alipay QR and PayPal payment links plus installation steps.
+- Create a Public OS Shell guide and distribution manifest.
 - Keep all generated files inside `BP-Wiki Starter/` unless you move them yourself.
-- Explain the differences between Free Starter, Pro Runtime, and Custom Implementation.
+- Explain the differences between Free Starter, Public OS Shell, Developer Core, and Private Brain.
 
 ## 12 Starter Templates
 
@@ -31,49 +31,61 @@ BP-Wiki Starter 为 Obsidian 用户提供中英双语知识库启动结构，适
 
 ## Editions
 
-| Edition | For | Includes | Payment |
+| Edition | For | Includes | Status |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| V2 Early Access Pack | Individual business analysts, researchers, BP and decision-support workers | Current Pro Runtime Pack, installation guide, dashboard/workbench setup, business templates | RMB 99 one-time download |
-| V2 Early Access + Updates | Users who want the current pack plus short-cycle improvements | Current Pro Runtime Pack plus 3 months of minor content-pack updates | RMB 199 |
-| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service from $1,500 or RMB 9,800 |
+| Public OS Shell | Users who want to understand BP-Wiki architecture safely | README / AGENTS-style operating shell, minimal Runtime map, synthetic examples, distribution manifest | Free |
+| Developer Core | Advanced users who want reproducible mechanics | Redacted packs, templates, toy projects, shareable skills, and implementation examples | Future public-safe package |
+| Private Brain | The user's complete production system | Private projects, skills, data sources, decision records, learning records, connector state | Not distributed |
 
-See [PRICING.md](PRICING.md) for the planned Pro and Custom pricing model.
+See [PRICING.md](PRICING.md) for the current distribution boundary.
 
-## Early Access Payment
+## Public OS Shell
 
-For RMB users, scan the Alipay QR code:
+`Public OS Shell` is the current public-safe BP-Wiki upgrade path in this plugin.
 
-<img src="assets/alipay-jie-qr.png" alt="Alipay QR code" width="180">
+It is a public-safe architecture shell, not the full private BP-Wiki system.
 
-For international users or custom inquiries, use PayPal:
+See [PUBLIC_OS_SHELL.md](PUBLIC_OS_SHELL.md) and [DISTRIBUTION_MANIFEST.public.yml](DISTRIBUTION_MANIFEST.public.yml) for the repository-level shell boundary.
 
-[paypal.me/michael061394](https://paypal.me/michael061394)
+Allowed contents:
 
-<img src="assets/paypal-me-michael061394.svg" alt="PayPal.Me link QR code" width="180">
+- public-safe README / AGENTS-style guidance;
+- minimal Runtime explanation;
+- empty folder conventions;
+- synthetic examples;
+- distribution manifest;
+- redaction and version-boundary notes.
 
-The Alipay QR image is a user-provided public payment QR image. The PayPal QR code encodes the PayPal.Me URL above. These are manual early-access payment and inquiry channels. Version `1.0.6` does not include automated in-plugin checkout, account login, license validation, or paid content-pack downloads.
+Not included:
 
-## Optional Payments Disclosure
+- private projects;
+- AI Staging;
+- connector configs;
+- secrets or local paths;
+- private skills;
+- real data sources;
+- decision ledgers;
+- learning logs.
 
-BP-Wiki Starter is free to use. Optional paid BP-Wiki Pro and Custom services may be offered outside this plugin through Alipay, PayPal, or a future checkout provider. The current `1.0.6` plugin does not require payment, does not require an account, does not make background network requests, does not include telemetry, and does not update itself.
+## Distribution Boundary
 
-BP-Wiki V2 is positioned as an RMB early-access download pack with optional short-cycle updates. Current delivery uses manual payment follow-up; automated subscription purchase, automatic pack download, and license activation are not active in this plugin release.
+README + AGENTS can share the operating-system shell. They do not replicate the full private BP-Wiki system.
 
-If future versions add license validation, account login, or automatic content-pack downloads, those features will be clearly disclosed in this README and in the plugin settings before release.
+Public versions are derived distributions. Private Brain remains canonical unless a user explicitly says otherwise.
+
+Public-to-private changes require port-back review. Private-to-public releases require redaction review.
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.0.6` does not collect analytics, send telemetry, or connect to external services in the background. Payment buttons open external payment pages only when clicked.
+This plugin runs locally inside your vault. Version `1.1.0` does not collect analytics, send telemetry, or connect to external services in the background.
 
 ## Commands
 
 - `Install starter kit`
 - `Open edition comparison`
 - `Open template selector`
-- `Open V2 early access`
-- `Open Alipay QR code`
-- `Open PayPal payment page`
+- `Open Public OS Shell`
 
 ## Manual Installation
 
@@ -96,7 +108,7 @@ This repository contains the required files for an Obsidian Community submission
 
 ## License
 
-The plugin code is licensed under the MIT License. BP-Wiki Pro content packs, if offered later, may use a separate commercial content license.
+The plugin code is licensed under the MIT License. Public OS Shell content generated by this plugin is intended as public-safe starter material.
 
 ## Trademark
 

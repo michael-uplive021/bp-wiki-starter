@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0
+
+- Replaced the V2 Early Access payment/download flow with Public OS Shell.
+- Added generated Public OS Shell and Distribution Manifest notes.
+- Removed Alipay / PayPal commands, payment links, and manifest funding metadata.
+- Updated README, pricing, privacy, submission notes, and plugin copy to distinguish Free Starter, Public OS Shell, Developer Core, and Private Brain.
+- Clarified that Public OS Shell is a derived public-safe distribution, not the full private BP-Wiki system.
+
 ## 1.0.6
 
 - Replaced the full Alipay screenshot with a cropped QR-only image asset.

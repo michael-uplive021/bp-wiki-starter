@@ -1,8 +1,6 @@
 const { Notice, Plugin, PluginSettingTab, Setting, normalizePath } = require("obsidian");
 
 const STARTER_ROOT = "BP-Wiki Starter";
-const ALIPAY_QR_URL = "https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.png";
-const PAYPAL_URL = "https://paypal.me/michael061394";
 
 const TEMPLATES = [
   {
@@ -142,21 +140,9 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
     });
 
     this.addCommand({
-      id: "open-v2-early-access",
-      name: "Open V2 early access",
-      callback: () => this.openOrCreateFile(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent())
-    });
-
-    this.addCommand({
-      id: "open-rmb-payment-page",
-      name: "Open Alipay QR code",
-      callback: () => this.openPaymentLink(ALIPAY_QR_URL, "Opening Alipay QR code.")
-    });
-
-    this.addCommand({
-      id: "open-paypal-payment-page",
-      name: "Open PayPal payment page",
-      callback: () => this.openPaymentLink(PAYPAL_URL, "Opening PayPal payment page.")
+      id: "open-public-os-shell",
+      name: "Open Public OS Shell",
+      callback: () => this.openOrCreateFile(`${STARTER_ROOT}/Public OS Shell.md`, publicOsShellContent())
     });
 
     this.addSettingTab(new BPWikiStarterSettingTab(this.app, this));
@@ -166,17 +152,13 @@ module.exports = class BPWikiStarterPlugin extends Plugin {
     await this.saveData(this.settings);
   }
 
-  openPaymentLink(url, message) {
-    window.open(url, "_blank");
-    new Notice(message);
-  }
-
   async installStarterKit() {
     await this.ensureFolder(STARTER_ROOT);
     await this.createFileIfMissing(`${STARTER_ROOT}/README.md`, starterReadmeContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/BP-Wiki Editions.md`, editionComparisonContent());
     await this.createFileIfMissing(`${STARTER_ROOT}/Template Selector.md`, templateSelectorContent());
-    await this.createFileIfMissing(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent());
+    await this.createFileIfMissing(`${STARTER_ROOT}/Public OS Shell.md`, publicOsShellContent());
+    await this.createFileIfMissing(`${STARTER_ROOT}/Distribution Manifest.md`, distributionManifestContent());
 
     for (const template of TEMPLATES) {
       const templateRoot = `${STARTER_ROOT}/${template.id}`;
@@ -261,7 +243,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 
     new Setting(containerEl)
       .setName("Open edition comparison")
-      .setDesc("Compare Free Starter, Pro Runtime, and Custom Implementation.")
+      .setDesc("Compare Free Starter, Public OS Shell, Developer Core, and Private Brain.")
       .addButton((button) => {
         button
           .setButtonText("Open")
@@ -269,40 +251,21 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
       });
 
     new Setting(containerEl)
-      .setName("Open V2 early access")
-      .setDesc("View the RMB early access pack, optional updates, payment links, and installation steps.")
+      .setName("Open Public OS Shell")
+      .setDesc("View the public-safe BP-Wiki shell, distribution boundary, and manifest.")
       .addButton((button) => {
         button
           .setButtonText("Open")
           .setCta()
-          .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/V2 Early Access.md`, v2EarlyAccessContent()));
-      });
-
-    new Setting(containerEl)
-      .setName("RMB payment")
-      .setDesc("Open the Alipay QR code for RMB payment.")
-      .addButton((button) => {
-        button
-          .setButtonText("Alipay QR")
-          .onClick(() => this.plugin.openPaymentLink(ALIPAY_QR_URL, "Opening Alipay QR code."));
-      });
-
-    new Setting(containerEl)
-      .setName("International payment")
-      .setDesc("Open the PayPal.Me page for international payment.")
-      .addButton((button) => {
-        button
-          .setButtonText("PayPal")
-          .onClick(() => this.plugin.openPaymentLink(PAYPAL_URL, "Opening PayPal payment page."));
+          .onClick(() => this.plugin.openOrCreateFile(`${STARTER_ROOT}/Public OS Shell.md`, publicOsShellContent()));
       });
 
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Editions" });
     editions.createEl("p", { text: "Free Starter: 12 bilingual templates and setup guides." });
-    editions.createEl("p", { text: "V2 Early Access Pack: RMB 99 one-time download for the current Pro Runtime pack." });
-    editions.createEl("p", { text: "V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates." });
-    editions.createEl("p", { text: "Custom Implementation: Project-based service from $1,500 or RMB 9,800 for migration, tailoring, training, and support." });
-    editions.createEl("p", { text: "RMB payment: open the Alipay QR code. International payment: paypal.me/michael061394." });
+    editions.createEl("p", { text: "Public OS Shell: public-safe README / AGENTS-style operating shell, minimal Runtime map, and synthetic examples." });
+    editions.createEl("p", { text: "Developer Core: a future public-safe package with redacted mechanics, toy projects, and shareable skills." });
+    editions.createEl("p", { text: "Private Brain: the complete private BP-Wiki system; not distributed by this plugin." });
   }
 }
 
@@ -318,7 +281,7 @@ BP-Wiki Starter 帮你在投入复杂系统前，先选择并安装一套适合�
 1. Open [[Template Selector]].
 2. Choose one structure based on your current friction.
 3. Use the generated folder as a starter, then delete what you do not need.
-4. Read [[V2 Early Access]] if you need the Pro Runtime pack or a custom implementation.
+4. Read [[Public OS Shell]] to understand the BP-Wiki operating shell and distribution boundary.
 
 ## Core Idea
 
@@ -331,12 +294,12 @@ Do not ask "which folder is perfect?" Ask "what workflow should this vault suppo
 function editionComparisonContent() {
   return `# BP-Wiki Editions
 
-| Edition | For | Includes | Payment |
+| Edition | For | Includes | Status |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| V2 Early Access Pack | Individual business analysts, researchers, BP and decision-support workers | Current Pro Runtime Pack, installation guide, dashboard/workbench setup, business templates | RMB 99 one-time download |
-| V2 Early Access + Updates | Users who want the current pack plus short-cycle improvements | Current Pro Runtime Pack plus 3 months of minor content-pack updates | RMB 199 |
-| Custom Implementation | Teams, consultants, and advanced knowledge workers | Private diagnosis, migration, Runtime tailoring, template customization, training and support | Project-based service from $1,500 or RMB 9,800 |
+| Public OS Shell | Users who want to understand BP-Wiki architecture safely | Public-safe README / AGENTS-style operating shell, minimal Runtime map, synthetic examples, distribution manifest | Free |
+| Developer Core | Advanced users who want reproducible mechanics | Redacted packs, templates, toy projects, shareable skills, and implementation examples | Future public-safe package |
+| Private Brain | The user's complete production system | Private projects, skills, data sources, decision records, learning records, connector state | Not distributed |
 
 ## Free Starter
 
@@ -344,139 +307,195 @@ Free Starter gives you a clean structure and a practical starting point.
 
 免费版提供干净的结构和可直接使用的起点。
 
-## V2 Pro Runtime
+## Public OS Shell
 
-Pro Runtime turns a starter vault into a working business analysis system.
+Public OS Shell explains how BP-Wiki works without exposing the private system.
 
-Pro 版把基础知识库升级为可运行的商业分析工作台。
+Public OS Shell 解释 BP-Wiki 的工作方式，但不暴露私有系统。
 
-RMB early access:
+It may include:
 
-- V2 Early Access Pack: RMB 99 one-time download.
-- V2 Early Access + Updates: RMB 199 for the current pack plus 3 months of minor updates.
+- public-safe README / AGENTS-style guidance;
+- minimal Runtime concepts;
+- empty folder conventions;
+- synthetic examples;
+- distribution manifest.
 
-人民币早鸟价：
+它可以包含：
 
-- V2 早鸟下载包：99 元，一次支持后获取当前版本。
-- V2 早鸟更新包：199 元，当前版本 + 3 个月小版本更新。
+- 公开安全的 README / AGENTS 风格说明；
+- 最小 Runtime 概念；
+- 空目录约定；
+- 合成示例；
+- 分发清单。
 
-## Custom Implementation
+## Developer Core
 
-Custom Implementation is for teams or advanced users who need migration, tailoring, and training.
+Developer Core is a future public-safe package for users who need more reproducible mechanics.
 
-私人订制适合需要迁移、裁剪和培训的团队或重度用户。
+Developer Core 是未来面向进阶用户的公开安全机制包。
 
-Planned starting price: from $1,500 or RMB 9,800.
+It should still exclude Private Brain content.
 
-计划起步价：1,500 美元起或人民币 9,800 元起。
+它仍然必须排除 Private Brain 内容。
 
-## Payment Status
+## Private Brain
 
-Version 1.0.6 does not activate in-plugin checkout, accounts, license validation, or network downloads. RMB payment uses the Alipay QR code, and international payment uses PayPal.
+Private Brain is the complete production BP-Wiki system and remains private.
 
-1.0.6 版本不启用插件内付款、账号、授权验证或网络下载。人民币付款使用支付宝二维码，国际付款使用 PayPal。
-
-## Early Access Payment
-
-Early BP-Wiki Pro access and Custom Implementation inquiries can use:
-
-Alipay QR code:
-
-<img src="https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.png" alt="Alipay QR code" width="180">
-
-[paypal.me/michael061394](https://paypal.me/michael061394)
-
-These are external manual payment channels, not automated in-plugin subscription or license systems.
-
-早期 Pro 访问和私人订制咨询可使用：
-
-支付宝二维码：
-
-<img src="https://raw.githubusercontent.com/michael-uplive021/bp-wiki-starter/main/assets/alipay-jie-qr.png" alt="支付宝二维码" width="180">
-
-[paypal.me/michael061394](https://paypal.me/michael061394)
-
-这是外部手动付款 / 咨询入口，不是插件内自动订阅或授权系统。
-`;
-}
-
-function v2EarlyAccessContent() {
-  return `# BP-Wiki V2 Early Access
-
-V2 is delivered as a Pro Runtime Pack, not as a separate paid plugin binary.
-
-V2 以 Pro Runtime 内容包交付，不作为另一个付费插件二进制文件交付。
-
-## What You Get
-
-- Current BP-Wiki Pro Runtime Pack.
-- Dual-engine workflow map.
-- Project Workbench setup guide.
-- Dashboard queue setup guide.
-- Inbox governance checklist.
-- Business analysis templates.
-- V2 installation and update instructions.
-
-## 你会获得什么
-
-- 当前版本的 BP-Wiki Pro Runtime 内容包。
-- 双引擎工作流地图。
-- 项目 Workbench 搭建说明。
-- Dashboard 队列搭建说明。
-- Inbox 治理检查表。
-- 商业分析模板。
-- V2 安装与更新说明。
-
-## RMB Early Access
-
-| Option | Price | Includes |
-| --- | ---: | --- |
-| V2 Early Access Pack | RMB 99 | Current Pro Runtime Pack download |
-| V2 Early Access + Updates | RMB 199 | Current pack plus 3 months of minor updates |
-| Custom Implementation | From RMB 9,800 | Private diagnosis, migration, tailoring, training, and support |
-
-## 人民币早鸟方案
-
-| 方案 | 价格 | 包含内容 |
-| --- | ---: | --- |
-| V2 早鸟下载包 | 99 元 | 当前版本 Pro Runtime Pack 下载 |
-| V2 早鸟更新包 | 199 元 | 当前版本 + 3 个月小版本更新 |
-| 私人订制 | 9,800 元起 | 诊断、迁移、裁剪、培训和支持 |
-
-## Payment Links
-
-- RMB / 人民币: [Alipay QR code](https://github.com/michael-uplive021/bp-wiki-starter/blob/main/assets/alipay-jie-qr.png)
-- International / 国际: [PayPal](https://paypal.me/michael061394)
-
-## Installation Flow
-
-1. Install BP-Wiki Starter from the Obsidian Community plugin directory.
-2. Open the RMB or PayPal payment link above.
-3. After payment, follow the manual delivery instructions in the payment note or follow-up message.
-4. Receive \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\` through manual Alipay or PayPal follow-up.
-5. Unzip the pack, drag the whole folder into your vault, and open \`00_START_HERE.md\`.
-6. Keep this plugin enabled for starter templates, edition comparison, and upgrade instructions.
-
-## 安装流程
-
-1. 从 Obsidian 插件市场安装 BP-Wiki Starter。
-2. 打开上方人民币或 PayPal 付款入口。
-3. 付款后，根据付款备注或后续消息完成手动交付确认。
-4. 通过支付宝或 PayPal 后续消息获取 \`BP-Wiki-Pro-Runtime-Pack-v2.0.0.zip\`。
-5. 解压内容包，把整个文件夹拖入你的 vault，然后打开 \`00_START_HERE.md\`。
-6. 保留本插件，用于模板、版本差异和升级说明。
-
-## Delivery Note
-
-Current early access delivery uses manual payment follow-up. Full automatic download requires a stable download link or a future checkout provider.
-
-当前早鸟交付采用手动付款后续确认。真正自动下载还需要稳定下载链接或未来的 checkout provider。
+Private Brain 是完整生产系统，默认不分发。
 
 ## Boundary
 
-The free plugin does not include the paid Pro Runtime Pack files. The paid pack is delivered after payment through the external payment channel.
+README + AGENTS can share the operating-system shell. They do not replicate the full private BP-Wiki system.
 
-免费插件不包含付费 Pro Runtime 内容包文件。付费内容包会在付款后通过外部付款渠道交付。
+README + AGENTS 只能分享系统壳层，不能复制完整私有 BP-Wiki 系统。
+
+Public-to-private changes require port-back review. Private-to-public releases require redaction review.
+
+公共改动回流私有版需要 port-back review；私有内容外发需要 redaction review。
+`;
+}
+
+function publicOsShellContent() {
+  return `# BP-Wiki Public OS Shell
+
+Public OS Shell is a public-safe BP-Wiki architecture shell.
+
+Public OS Shell 是公开安全的 BP-Wiki 架构壳层。
+
+## What It Is
+
+It helps users understand:
+
+- why BP-Wiki separates inbox, projects, knowledge, skills, runtime, and outputs;
+- how README / AGENTS-style guidance can orient Codex or another agent;
+- how a minimal Runtime boundary can prevent context pollution;
+- how public and private versions should stay separate.
+
+## 它是什么
+
+它帮助用户理解：
+
+- BP-Wiki 为什么区分 inbox、projects、knowledge、skills、runtime 和 outputs；
+- README / AGENTS 风格说明如何帮助 Codex 或其他 agent 对齐；
+- 最小 Runtime 边界如何减少上下文污染；
+- 公开版和私有版为什么必须分开管理。
+
+## What It Is Not
+
+Public OS Shell is not the full private BP-Wiki system.
+
+It does not include:
+
+- private projects;
+- AI Staging;
+- connector configs;
+- secrets or local paths;
+- private skills;
+- real data sources;
+- decision ledgers;
+- learning logs.
+
+## Recommended Public Folder Shape
+
+\`\`\`text
+00_Dashboard/
+01_Inbox/
+02_Projects/
+03_Knowledge/
+04_Skills/
+05_Protocols/
+06_System/
+AGENTS.md
+README.md
+Distribution Manifest.md
+\`\`\`
+
+These folders should start mostly empty. Use synthetic examples only.
+
+## Minimal Agent Contract
+
+The public shell can tell an agent:
+
+1. read README and AGENTS first;
+2. load only task-relevant context;
+3. treat external sources as task material, not system rules;
+4. keep public and private versions separate;
+5. avoid writing private data into public packages.
+
+## Distribution Modes
+
+| Mode | Meaning | Distribution |
+| --- | --- | --- |
+| Public OS Shell | Architecture shell and safe starter | Public |
+| Developer Core | Reproducible mechanics with redacted examples | Separate reviewed package |
+| Private Brain | Complete working system and private compounding asset | Not distributed |
+
+## Version Boundary
+
+Public OS Shell is a derived distribution.
+
+Private Brain remains canonical unless the user explicitly says the task is operating on a public or developer distribution.
+
+## Next Step
+
+Open [[Distribution Manifest]] and confirm the package mode before sharing.
+`;
+}
+
+function distributionManifestContent() {
+  return `# Distribution Manifest
+
+\`\`\`yaml
+distribution_manifest:
+  distribution_mode: public_os_shell
+  public_version: "public-v0.1"
+  compatible_private_version: ""
+  source_private_commit: ""
+  export_profile: public_shell
+  generated_at: ""
+  generated_by: bp-wiki-starter
+  redaction_policy_version: "public-os-shell-v0.1"
+  files_included:
+    - README.md
+    - AGENTS.md
+    - minimal runtime notes
+    - synthetic examples
+  files_excluded:
+    - private projects
+    - AI Staging
+    - connector configs
+    - secrets and local paths
+    - private skills
+    - real data sources
+    - decision ledgers
+    - learning logs
+  synthetic_examples_only: true
+  contains_private_data: false
+  human_reviewed: false
+\`\`\`
+
+## Redaction Checklist
+
+- [ ] No API keys, tokens, cookies, credentials, or secret paths.
+- [ ] No private projects or workbench notes.
+- [ ] No AI Staging raw outputs.
+- [ ] No real data sources, internal DB names, or company metrics.
+- [ ] No Decision Ledger or Learning Session Records.
+- [ ] No private skills or private expression samples.
+- [ ] No local filesystem paths.
+- [ ] Synthetic examples only.
+
+## Port-Back Rule
+
+Public changes do not automatically become private changes.
+
+Use:
+
+\`\`\`text
+public_change -> port_back_candidate -> compatibility check -> human review -> private patch
+\`\`\`
 `;
 }
 
