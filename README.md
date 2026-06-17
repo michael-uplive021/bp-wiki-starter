@@ -111,7 +111,7 @@ Public-to-private changes require port-back review. Private-to-public releases r
 
 ## Privacy
 
-This plugin runs locally inside your vault. Version `1.1.0` does not collect analytics, send telemetry, or connect to external services in the background.
+This plugin runs locally inside your vault. Version `1.1.1` does not collect analytics, send telemetry, or connect to external services in the background.
 
 ## Commands
 
