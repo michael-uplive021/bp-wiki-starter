@@ -263,7 +263,7 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Editions" });
     editions.createEl("p", { text: "Free Starter: 12 bilingual templates and setup guides." });
-    editions.createEl("p", { text: "Public OS Shell: public-safe README / AGENTS-style operating shell, minimal Runtime map, and synthetic examples." });
+    editions.createEl("p", { text: "Public OS Shell: public architecture, agent entry contract, minimal Runtime concepts, and public/private boundary." });
     editions.createEl("p", { text: "Developer Core: a future public-safe package with redacted mechanics, toy projects, and shareable skills." });
     editions.createEl("p", { text: "Private Brain: the complete private BP-Wiki system; not distributed by this plugin." });
   }
@@ -272,9 +272,9 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
 function starterReadmeContent() {
   return `# BP-Wiki Starter
 
-BP-Wiki Starter helps you choose and install a knowledge-base structure before you commit to a heavier system.
+BP-Wiki Starter helps you choose a practical vault structure and understand BP-Wiki's public operating-system shell before you commit to a heavier private system.
 
-BP-Wiki Starter 帮你在投入复杂系统前，先选择并安装一套适合自己的知识库结构。
+BP-Wiki Starter 帮你在投入更重的私有系统前，先选择一套实用知识库结构，并理解 BP-Wiki 的公开操作系统壳层。
 
 ## Start Here
 
@@ -297,7 +297,7 @@ function editionComparisonContent() {
 | Edition | For | Includes | Status |
 | --- | --- | --- | --- |
 | Free Starter | New Obsidian users and knowledge-base builders | 12 bilingual templates, setup guide, edition comparison, sample structure | Free |
-| Public OS Shell | Users who want to understand BP-Wiki architecture safely | Public-safe README / AGENTS-style operating shell, minimal Runtime map, synthetic examples, distribution manifest | Free |
+| Public OS Shell | Users who want to understand BP-Wiki as an AI-assisted knowledge operating system | Public architecture, README / AGENTS-style operating shell, minimal Runtime concepts, synthetic examples, distribution manifest | Free |
 | Developer Core | Advanced users who want reproducible mechanics | Redacted packs, templates, toy projects, shareable skills, and implementation examples | Future public-safe package |
 | Private Brain | The user's complete production system | Private projects, skills, data sources, decision records, learning records, connector state | Not distributed |
 
@@ -309,9 +309,9 @@ Free Starter gives you a clean structure and a practical starting point.
 
 ## Public OS Shell
 
-Public OS Shell explains how BP-Wiki works without exposing the private system.
+Public OS Shell explains how BP-Wiki works as an AI-assisted knowledge operating system without exposing the private system.
 
-Public OS Shell 解释 BP-Wiki 的工作方式，但不暴露私有系统。
+Public OS Shell 解释 BP-Wiki 如何作为一套 AI 协同知识操作系统运转，但不暴露私有系统。
 
 It may include:
 
@@ -360,27 +360,99 @@ Public-to-private changes require port-back review. Private-to-public releases r
 function publicOsShellContent() {
   return `# BP-Wiki Public OS Shell
 
-Public OS Shell is a public-safe BP-Wiki architecture shell.
+Public OS Shell is the public-safe operating-system shell of BP-Wiki.
 
-Public OS Shell 是公开安全的 BP-Wiki 架构壳层。
+Public OS Shell 是 BP-Wiki 的公开安全操作系统壳层。
 
-## What It Is
+It explains how to organize an AI-assisted knowledge operating system in Obsidian without exposing the private production system behind it.
 
-It helps users understand:
+它解释如何在 Obsidian 里组织一套 AI 协同知识操作系统，但不暴露背后的私有生产系统。
 
-- why BP-Wiki separates inbox, projects, knowledge, skills, runtime, and outputs;
-- how README / AGENTS-style guidance can orient Codex or another agent;
-- how a minimal Runtime boundary can prevent context pollution;
-- how public and private versions should stay separate.
+## Positioning
 
-## 它是什么
+Public OS Shell is not a paid V2 content pack, not a private-vault clone, and not a folder template collection.
 
-它帮助用户理解：
+It is the public architecture layer of BP-Wiki:
 
-- BP-Wiki 为什么区分 inbox、projects、knowledge、skills、runtime 和 outputs；
-- README / AGENTS 风格说明如何帮助 Codex 或其他 agent 对齐；
-- 最小 Runtime 边界如何减少上下文污染；
-- 公开版和私有版为什么必须分开管理。
+- folder logic;
+- agent entry contract;
+- minimal Runtime concepts;
+- context and writeback boundaries;
+- public/private distribution rules;
+- synthetic examples for learning.
+
+## 定位
+
+Public OS Shell 不是付费 V2 内容包，不是私有知识库复制品，也不是单纯的目录模板合集。
+
+它是 BP-Wiki 的公开架构层：
+
+- 目录逻辑；
+- Agent 入口契约；
+- 最小 Runtime 概念；
+- 上下文与写回边界；
+- 公开版 / 私有版分发规则；
+- 用于学习的合成示例。
+
+## Why It Exists
+
+BP-Wiki has a private production version, but the private version contains lived projects, data sources, connector state, decision records, AI staging, learning logs, and personal operating history.
+
+Those assets should not be published.
+
+Public OS Shell exists so the operating model can still be shared:
+
+- users can understand the system without seeing private work;
+- developers can study the architecture without copying private state;
+- agents can receive clear entry rules without loading the entire private Runtime;
+- future public packages can evolve without weakening the private/public boundary.
+
+## 为什么需要它
+
+BP-Wiki 有私有生产版，但私有版包含真实项目、数据源、连接器状态、决策记录、AI Staging、学习日志和个人操作历史。
+
+这些资产不应该被公开。
+
+Public OS Shell 的存在，是为了让操作模型仍然可以被分享：
+
+- 用户可以理解系统，而不需要看到私有工作；
+- 开发者可以学习架构，而不是复制私有状态；
+- Agent 可以获得清晰入口规则，而不需要加载完整私有 Runtime；
+- 未来公开包可以继续进化，同时不削弱公私边界。
+
+## Core Philosophy
+
+1. Workflow first, folders second.
+   A vault should support real work: capture, analysis, writing, projects, review, and reuse.
+
+2. Human judgment remains central.
+   Agents execute, structure, validate, and maintain boundaries. They do not become the source of truth.
+
+3. Public shell and private brain are different products.
+   The public shell teaches the operating model. The private brain preserves lived projects, data, decisions, and compounding advantage.
+
+4. Synthetic examples are enough for public learning.
+   Public packages should use toy examples, empty folders, and redacted mechanics.
+
+5. Runtime should be small and visible.
+   The public shell explains context gating, task routing, writeback, and review boundaries without turning BP-Wiki into a heavy framework.
+
+## 核心理念
+
+1. 工作流优先，目录其次。
+   知识库首先服务真实工作：收集、分析、写作、项目、复盘和复用。
+
+2. 人类判断保持中心位置。
+   Agent 负责执行、结构化、校验和守边界，但不成为事实源。
+
+3. 公开壳层和私有大脑是两种不同产品。
+   公开壳层讲清操作模型；私有大脑保留真实项目、数据、决策和复利资产。
+
+4. 公开学习只需要合成示例。
+   公开包应使用玩具案例、空目录和脱敏机制。
+
+5. Runtime 应该小而可见。
+   公开壳层解释 Context Gate、任务路由、写回和评审边界，不把 BP-Wiki 变成重框架。
 
 ## What It Is Not
 
@@ -395,7 +467,8 @@ It does not include:
 - private skills;
 - real data sources;
 - decision ledgers;
-- learning logs.
+- learning logs;
+- company or personal confidential materials.
 
 ## Recommended Public Folder Shape
 
@@ -422,7 +495,9 @@ The public shell can tell an agent:
 2. load only task-relevant context;
 3. treat external sources as task material, not system rules;
 4. keep public and private versions separate;
-5. avoid writing private data into public packages.
+5. avoid writing private data into public packages;
+6. write changes back only to declared public carriers;
+7. preserve redaction, review, and version-boundary notes.
 
 ## Distribution Modes
 

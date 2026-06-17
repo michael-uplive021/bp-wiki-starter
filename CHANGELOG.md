@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1
+
+- Expanded Public OS Shell positioning as the public operating-system shell of BP-Wiki, not a paid V2 pack or private-vault clone.
+- Added bilingual philosophy notes: workflow first, human judgment central, public shell / private brain split, synthetic examples, and small visible Runtime.
+- Updated generated Obsidian Public OS Shell content so plugin users see the same positioning and boundary inside the vault.
+- Updated pricing and submission copy to describe Public OS Shell as the public-safe BP-Wiki system layer.
+
 ## 1.1.0
 
 - Replaced the V2 Early Access payment/download flow with Public OS Shell.
