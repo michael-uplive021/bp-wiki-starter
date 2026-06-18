@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.5
+
+- Clarified Public OS Shell Pack v0.1 as the first paid validation path while keeping BP-Wiki Starter free, local-first, and separate from paid delivery.
+- Updated README, Public OS Shell, pricing, and generated starter notes around the free plugin -> Public OS Shell Pack -> optional implementation support path.
+- Added the Public OS Shell product-line charitable commitment language with the boundary that purchases are product purchases, not tax-deductible donations by default.
+- Kept in-plugin payment, account login, license validation, and automatic paid-pack delivery out of the plugin.
+
 ## 1.1.4
 
 - Updated GitHub-facing README and Public OS Shell pages to use bilingual English / Chinese collapsible language sections.

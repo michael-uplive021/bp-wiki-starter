@@ -262,8 +262,8 @@ class BPWikiStarterSettingTab extends PluginSettingTab {
     const editions = containerEl.createDiv({ cls: "bp-wiki-starter-editions" });
     editions.createEl("h3", { text: "Starter paths" });
     editions.createEl("p", { text: "Free starter plugin: orientation layer, starter paths, and 12 lightweight templates." });
-    editions.createEl("p", { text: "Public OS Shell package: the main product path for dual-engine AI-ready knowledge work." });
-    editions.createEl("p", { text: "Implementation support: optional custom setup, workflow adaptation, and team training outside this plugin." });
+    editions.createEl("p", { text: "Public OS Shell Pack v0.1: the first paid validation path for dual-engine AI-ready knowledge work." });
+    editions.createEl("p", { text: "Implementation support: optional follow-on setup, workflow adaptation, and team training outside this plugin." });
   }
 }
 
@@ -295,6 +295,10 @@ The templates are only the onboarding layer. The core value is the Public OS She
 2. Understand the operating model before choosing folders.
 3. Use [[Template Selector]] only as a quick workspace starter.
 4. Move to the full Public OS Shell package when you need the complete operating manual, governance model, public-safe examples, and upgrade path.
+
+## Product Line Commitment
+
+For paid Public OS Shell package revenue, 50% of net after-tax income is reserved for charitable giving and summarized quarterly. A purchase is a product purchase, not a tax-deductible donation by default.
 `;
 }
 
@@ -304,8 +308,8 @@ function editionComparisonContent() {
 | Path | Role | Includes | Status |
 | --- | --- | --- | --- |
 | Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, setup checklist | Free |
-| Public OS Shell Package | Main product path | Full operating manual, dual-engine model, governance system, dashboard patterns, agent contracts, public-safe examples | Paid / separately distributed |
-| Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training | Separate service |
+| Public OS Shell Pack v0.1 | First paid validation path | Full operating manual, demo vault, dashboard patterns, agent contract, context gate, three synthetic workflows, redaction rules, license | Paid / separately distributed |
+| Implementation Support | Optional follow-on path | Custom setup, migration support, workflow adaptation, team training | Separate service |
 
 ## Free Starter Plugin
 
@@ -313,9 +317,9 @@ The free plugin is a lightweight entry point. It helps users see the shape of th
 
 免费插件是轻量入口，用来让用户先看见系统形态，再决定是否采用完整 Public OS Shell。
 
-## Public OS Shell
+## Public OS Shell Pack v0.1
 
-Public OS Shell is the core product path.
+Public OS Shell Pack v0.1 is the first paid validation path.
 
 It is built around:
 
@@ -326,8 +330,9 @@ It is built around:
 - review queues and dashboard patterns;
 - night governance and system evolution;
 - public/private sharing boundaries.
+- synthetic workflow examples and a demo vault.
 
-Public OS Shell 是核心产品路径。
+Public OS Shell Pack v0.1 是第一阶段付费验证路径。
 
 它围绕这些机制展开：
 
@@ -338,6 +343,7 @@ Public OS Shell 是核心产品路径。
 - 审查队列和 Dashboard 模式；
 - 夜间治理和系统进化；
 - 公开 / 私有分享边界。
+- 合成工作流示例和 demo vault。
 
 ## Templates
 
@@ -350,6 +356,12 @@ The 12 templates are useful onboarding material, not the main BP-Wiki product.
 This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid Public OS Shell packages should be delivered separately with their own terms and release notes.
 
 The free plugin does not ask users to upload notes, connect accounts, expose API keys, publish real projects, or share company material.
+
+## Product Line Commitment
+
+For paid Public OS Shell package revenue, 50% of net after-tax income is reserved for charitable giving and summarized quarterly.
+
+This is a creator-side commitment. A purchase is a product purchase, not a tax-deductible donation by default.
 `;
 }
 
@@ -420,10 +432,12 @@ Repeated workflows become checklists. Useful output patterns become templates. R
 | Layer | Role | Included Here |
 | --- | --- | --- |
 | Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, setup checklist |
-| Public OS Shell Package | Main product path | Full operating manual, governance model, dashboard patterns, agent contracts, public-safe examples, upgrade guidance |
+| Public OS Shell Pack v0.1 | First paid validation path | Full operating manual, demo vault, dashboard patterns, agent contract, context gate, three synthetic workflows, redaction rules, license |
 | Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training |
 
 This repository does not process payment or deliver paid files automatically. Any paid Public OS Shell package should be distributed separately with its own terms and release notes.
+
+Implementation support should follow real inbound demand. The first product step is the free starter plugin plus the separately delivered Public OS Shell Pack.
 
 ## Who It Is For
 
@@ -436,6 +450,12 @@ The starter introduces the operating model. The full package can go deeper with 
 ## Data Safety
 
 Your own notes stay on your machine. The starter does not ask you to upload notes, connect accounts, expose API keys, publish real projects, or share company material.
+
+## Product Line Commitment
+
+For paid Public OS Shell package revenue, 50% of net after-tax income is reserved for charitable giving and summarized quarterly.
+
+This is a creator-side commitment. A purchase is a product purchase, not a tax-deductible donation by default.
 
 ## Minimal Agent Contract
 

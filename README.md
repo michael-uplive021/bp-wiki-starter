@@ -127,18 +127,28 @@ The free starter plugin is for orientation. The Public OS Shell package is the m
 
 The full Public OS Shell package is designed for users who want to operate BP-Wiki as an AI-ready knowledge system, not only copy a folder layout.
 
-It can include, when distributed separately:
+The first paid validation offer is `Public OS Shell Pack v0.1`. It is a compact digital pack, distributed separately from this plugin.
+
+It can include:
 
 - complete public operating manual;
 - dashboard and review-queue patterns;
 - agent entry contract and context-loading rules;
-- public-safe workflow blueprints;
+- three public-safe workflow blueprints;
 - governance checklists;
 - synthetic examples and demo cases;
 - setup and upgrade guidance;
 - packaging and sharing checklist.
 
+Implementation support is a separate path for users with a specific migration, setup, or team workflow request. It is not the first step for most users.
+
 This plugin does not process payment, validate licenses, create accounts, or download paid material automatically. Paid or advanced Public OS Shell packages should be delivered separately with their own terms and release notes.
+
+## Product Line Commitment
+
+For paid Public OS Shell package revenue, 50% of net after-tax income is reserved for charitable giving and summarized quarterly.
+
+This is a creator-side commitment. A purchase is a product purchase, not a tax-deductible donation by default.
 
 ## Starter Templates
 
@@ -310,18 +320,28 @@ Public OS Shell 给 Agent 一个清晰入口契约：
 
 完整 Public OS Shell package 面向那些想把 BP-Wiki 当作 AI-ready 知识系统来运营，而不只是复制目录结构的用户。
 
-独立分发时，它可以包含：
+首个付费验证产品是 `Public OS Shell Pack v0.1`。它是一个紧凑的数字内容包，和这个免费插件分开交付。
+
+它可以包含：
 
 - 完整公开操作手册；
 - dashboard 和 review queue 模式；
 - Agent 入口契约和上下文加载规则；
-- 公开安全的工作流蓝图；
+- 3 个公开安全的工作流蓝图；
 - 治理 checklist；
 - 合成示例和 demo case；
 - 安装与升级指引；
 - 打包与分享 checklist。
 
+Implementation support 是单独服务路径，只面向已经有明确迁移、设置或团队工作流需求的用户。它不是大多数用户的第一步。
+
 这个插件不处理支付、不校验 license、不创建账号，也不会自动下载付费材料。付费或进阶 Public OS Shell package 应通过独立条款和 release notes 单独分发。
+
+## 产品线公益承诺
+
+Public OS Shell 付费内容包收入中，税后净收入的 50% 将预留用于公益捐赠，并按季度做汇总披露。
+
+这是创作者侧承诺。用户购买的是产品，不默认构成用户本人的可抵税捐赠。
 
 ## Starter Templates
 

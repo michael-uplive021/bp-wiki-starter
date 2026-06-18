@@ -125,10 +125,12 @@ This is how Public OS Shell turns usage into system evolution.
 | Layer | Role | Included Here |
 | --- | --- | --- |
 | Free Starter Plugin | Orientation and first contact | Short guide, starter paths, 12 templates, setup checklist |
-| Public OS Shell Package | Main product path | Full operating manual, governance model, dashboard patterns, agent contracts, public-safe examples, upgrade guidance |
+| Public OS Shell Pack v0.1 | Main paid validation path | Full operating manual, governance model, dashboard patterns, agent contracts, three public-safe workflows, synthetic demo vault, upgrade guidance |
 | Implementation Support | Optional service path | Custom setup, migration support, workflow adaptation, team training |
 
 This repository does not process payment or deliver paid files automatically. Any paid Public OS Shell package should be distributed separately with its own terms and release notes.
+
+Implementation support should follow real inbound demand. The first product step is the free starter plugin plus the separately delivered Public OS Shell Pack.
 
 ## Who It Is For
 
@@ -157,6 +159,12 @@ The public starter introduces the operating model. The full package can go deepe
 Your own notes stay on your machine.
 
 The public starter does not ask you to upload notes, connect accounts, expose API keys, publish real projects, or share company material. When adapting Public OS Shell, use synthetic examples or material you have intentionally prepared for sharing.
+
+## Product Line Commitment
+
+For paid Public OS Shell package revenue, 50% of net after-tax income is reserved for charitable giving and summarized quarterly.
+
+This is a creator-side commitment. A purchase is a product purchase, not a tax-deductible donation by default.
 
 ## Next Step
 
@@ -287,10 +295,12 @@ Public OS Shell 给 Agent 一个有边界的操作契约：
 | 层级 | 角色 | 当前仓库包含 |
 | --- | --- | --- |
 | Free Starter Plugin | 入口和第一接触点 | 简短说明、starter paths、12 套模板、setup checklist |
-| Public OS Shell Package | 核心产品路径 | 完整操作手册、治理模型、dashboard 模式、Agent 契约、公开安全示例、升级指引 |
+| Public OS Shell Pack v0.1 | 核心付费验证路径 | 完整操作手册、治理模型、dashboard 模式、Agent 契约、3 个公开安全工作流、合成 demo vault、升级指引 |
 | Implementation Support | 可选服务路径 | 定制搭建、迁移支持、工作流适配、团队培训 |
 
 这个仓库不处理支付，也不自动交付付费文件。任何付费 Public OS Shell package 都应通过独立条款和 release notes 单独分发。
+
+Implementation support 应该跟随真实 inbound 需求出现。第一步产品路径是免费 starter plugin 加独立交付的 Public OS Shell Pack。
 
 ## 适合谁
 
@@ -321,6 +331,12 @@ Public OS Shell 适合已经感觉“普通文件夹不够用”的用户。
 你的个人笔记仍然留在你的本地机器上。
 
 公开 starter 不要求你上传笔记、连接账号、暴露 API key、发布真实项目或分享公司材料。改造 Public OS Shell 时，应使用合成示例，或使用你明确准备好公开分享的材料。
+
+## 产品线公益承诺
+
+Public OS Shell 付费内容包收入中，税后净收入的 50% 将预留用于公益捐赠，并按季度做汇总披露。
+
+这是创作者侧承诺。用户购买的是产品，不默认构成用户本人的可抵税捐赠。
 
 ## 下一步
 
