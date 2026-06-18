@@ -1,6 +1,6 @@
 # Privacy Policy
 
-BP-Wiki Starter version `1.1.4` runs locally in your Obsidian vault.
+BP-Wiki Starter version `1.1.5` runs locally in your Obsidian vault.
 
 ## Data Collection
 
@@ -8,7 +8,7 @@ The plugin does not collect, store, transmit, or sell personal data.
 
 ## Network Use
 
-Version `1.1.4` does not make background network requests.
+Version `1.1.5` does not make background network requests.
 
 ## Telemetry
 
@@ -18,7 +18,7 @@ The plugin does not include client-side telemetry or analytics.
 
 The free starter plugin does not require payment or an account.
 
-In-plugin purchase, automatic renewal, and license activation are not active in version `1.1.4`. If a future version adds license validation, account login, or automatic content-pack downloads, this policy and the README will be updated before release.
+In-plugin purchase, automatic renewal, and license activation are not active in version `1.1.5`. If a future version adds license validation, account login, or automatic content-pack downloads, this policy and the README will be updated before release.
 
 ## Local Files
 
