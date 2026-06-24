@@ -15,7 +15,7 @@ https://github.com/michael-uplive021/bp-wiki-starter
   "id": "bp-wiki-starter",
   "name": "BP-Wiki Starter",
   "author": "Jie Huang",
-  "description": "Create a free entry kit for BP-Wiki Public OS Shell and AI-ready Obsidian knowledge work.",
+  "description": "Create a free entry kit for BP-Wiki Public OS Shell and AI-ready knowledge work.",
   "repo": "michael-uplive021/bp-wiki-starter"
 }
 ```
@@ -24,7 +24,7 @@ https://github.com/michael-uplive021/bp-wiki-starter
 
 Recommended label: `Free`
 
-Reason: version `1.1.5` does not include in-plugin purchase, external payment links, account login, license validation, paid content-pack delivery, telemetry, or background network requests.
+Reason: version `1.1.6` does not include in-plugin purchase, external payment links, account login, license validation, paid content-pack delivery, telemetry, or background network requests.
 
 The plugin may describe the separately distributed Public OS Shell package, but it does not sell, unlock, validate, or download paid material inside Obsidian.
 
@@ -33,8 +33,8 @@ The plugin may describe the separately distributed Public OS Shell package, but 
 Create a GitHub release with:
 
 ```text
-Tag: 1.1.5
-Release name: 1.1.5
+Tag: 1.1.6
+Release name: 1.1.6
 ```
 
 Attach:

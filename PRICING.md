@@ -2,7 +2,7 @@
 
 BP-Wiki Starter is free to use.
 
-Version `1.1.5` does not include in-plugin purchase, external payment links, account login, license validation, automatic subscribed downloads, or paid content-pack delivery.
+Version `1.1.6` does not include in-plugin purchase, external payment links, account login, license validation, automatic subscribed downloads, or paid content-pack delivery.
 
 ## Product Paths
 

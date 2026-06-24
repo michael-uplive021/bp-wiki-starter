@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.6
+
+- Removed the word "Obsidian" from the plugin manifest description to satisfy the Community directory automated review rule.
+
 ## 1.1.5
 
 - Clarified Public OS Shell Pack v0.1 as the first paid validation path while keeping BP-Wiki Starter free, local-first, and separate from paid delivery.

@@ -1,9 +1,9 @@
 {
   "id": "bp-wiki-starter",
   "name": "BP-Wiki Starter",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "minAppVersion": "1.8.0",
-  "description": "Create a free entry kit for BP-Wiki Public OS Shell and AI-ready Obsidian knowledge work.",
+  "description": "Create a free entry kit for BP-Wiki Public OS Shell and AI-ready knowledge work.",
   "author": "Jie Huang",
   "authorUrl": "https://github.com/michael-uplive021",
   "isDesktopOnly": false
